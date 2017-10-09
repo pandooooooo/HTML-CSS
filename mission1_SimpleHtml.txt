@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>github远程仓库和本地仓库连接</h1>
+    <hr />
+    <h3>创建远程仓库</h3>
+    <p>在github账户上创建了一个git_test的仓库。创建完成仓库之后，github会显示一些git的基本操作。</p>
+    <pre>
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin git@github.com:TonySudo/git_test.git
+    git push -u origin master
+    </pre>
+    <p>... or push an existing repository from the command line </p>
+    <pre>
+    git remote add origin git@github.com:TonySudo/git_test.git
+    git push -u origin master
+    </pre>
+    <p>仓库建好了，如何上传文件呢？我知道的有两种方法：
+	 将github上的仓库clone到本地，添加文件之后再push。
+	 在本地创建仓库，连接到远程的仓库,然后再push文件。
+    </p>
+    
+    <hr />
+    
+    <h3>克隆远程仓库到本地</h3>
+    <p>clone的时候，远程主机自动被命名为<em>origin</em>。</p>
+    <code>git clone git@github.com:TonySudo/git_test.git </code>
+    <pre>
+    Cloning into 'git_test'...
+    warning: You appear to have cloned an empty repository.
+    Checking connectivity... done.
+    </pre>
+    <p>克隆某个分支, 使用<strong>-b</strong>选项，进行分支的选择，<em>branch</em>是远端仓库分支的名字。</p>
+    <code>git clone -b branch https://github.com/TonySudo/git_test.git</code>
+    <pre>
+    Cloning into 'git_test'...
+    Unpacking objects: 100% (6/6), done.packing objects: 16% (1/6)
+    remote: Compressing objects: 100% (2/2), done.
+    remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+    Checking connectivity... done.
+    </pre>
+    
+
+</body>
+</html>
