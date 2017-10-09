@@ -4,47 +4,136 @@
 
 </head>
 <body>
-    <h1>github远程仓库和本地仓库连接</h1>
-    <hr />
-    <h3>创建远程仓库</h3>
-    <p>在github账户上创建了一个git_test的仓库。创建完成仓库之后，github会显示一些git的基本操作。</p>
-    <pre>
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git remote add origin git@github.com:TonySudo/git_test.git
-    git push -u origin master
-    </pre>
-    <p>... or push an existing repository from the command line </p>
-    <pre>
-    git remote add origin git@github.com:TonySudo/git_test.git
-    git push -u origin master
-    </pre>
-    <p>仓库建好了，如何上传文件呢？我知道的有两种方法：
-	 将github上的仓库clone到本地，添加文件之后再push。
-	 在本地创建仓库，连接到远程的仓库,然后再push文件。
-    </p>
+    <div id="github">
+        <h1>github远程仓库和本地仓库连接</h1>
+        <hr />
+        <h3>Github简介</h3>
+        <q>gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git作为唯一的版本库格式进行托管，故名gitHub。</q>
+        <blackquote>Git的优势不单是不必联网这么简单，后面我们还会看到Git极其强大的分支管理，把SVN等远远抛在了后面。
+CVS作为最早的开源而且免费的集中式版本控制系统，直到现在还有不少人在用。由于CVS自身设计的问题，会造成提交文件不完整，版本库莫名其妙损坏的情况。同样是开源而且免费的SVN修正了CVS的一些稳定性问题，是目前用得最多的集中式版本库控制系统。
+除了免费的外，还有收费的集中式版本控制系统，比如IBM的ClearCase（以前是Rational公司的，被IBM收购了），特点是安装比Windows还大，运行比蜗牛还慢，能用ClearCase的一般是世界500强，他们有个共同的特点是财大气粗，或者人傻钱多。
+微软自己也有一个集中式版本控制系统叫VSS，集成在Visual Studio中。由于其反人类的设计，连微软自己都不好意思用了。
+分布式版本控制系统除了Git以及促使Git诞生的BitKeeper外，还有类似Git的Mercurial和Bazaar等。这些分布式版本控制系统各有特点，但最快、最简单也最流行的依然是Git！</blackquote>
+        <hr />
+        <h3>Github优势</h3>
+        <ul>
+            <li>免费</li>
+            <li>开源</li>
+            <li>分布式</li>
+        </ul>
+        <hr />
+        <h3>创建远程仓库</h3>
+        <p>在github账户上创建了一个git_test的仓库。创建完成仓库之后，github会显示一些git的基本操作。</p>
+        <pre>
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git remote add origin git@github.com:TonySudo/git_test.git
+        git push -u origin master
+        </pre>
+        <p>... or push an existing repository from the command line </p>
+        <pre>
+        git remote add origin git@github.com:TonySudo/git_test.git
+        git push -u origin master
+        </pre>
+        <p>仓库建好了，如何上传文件呢？我知道的有两种方法：
+        将github上的仓库clone到本地，添加文件之后再push。
+        在本地创建仓库，连接到远程的仓库,然后再push文件。
+        </p>
+        <hr />
+        <h3>克隆远程仓库到本地</h3>
+        <p>clone的时候，远程主机自动被命名为<em>origin</em>。</p>
+        <code>  git clone git@github.com:TonySudo/git_test.git </code>
+        <pre>
+        Cloning into 'git_test'...
+        warning: You appear to have cloned an empty repository.
+        Checking connectivity... done.
+        </pre>
+        <p>克隆某个分支, 使用<strong>-b</strong>选项，进行分支的选择，<em>branch</em>是远端仓库分支的名字。</p>
+        <code>  git clone -b branch https://github.com/TonySudo/git_test.git</code>
+        <pre>
+        Cloning into 'git_test'...
+        Unpacking objects: 100% (6/6), done.packing objects: 16% (1/6)
+        remote: Compressing objects: 100% (2/2), done.
+        remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+        Checking connectivity... done.
+        </pre>
+    </div>
     
-    <hr />
-    
-    <h3>克隆远程仓库到本地</h3>
-    <p>clone的时候，远程主机自动被命名为<em>origin</em>。</p>
-    <code>git clone git@github.com:TonySudo/git_test.git </code>
-    <pre>
-    Cloning into 'git_test'...
-    warning: You appear to have cloned an empty repository.
-    Checking connectivity... done.
-    </pre>
-    <p>克隆某个分支, 使用<strong>-b</strong>选项，进行分支的选择，<em>branch</em>是远端仓库分支的名字。</p>
-    <code>git clone -b branch https://github.com/TonySudo/git_test.git</code>
-    <pre>
-    Cloning into 'git_test'...
-    Unpacking objects: 100% (6/6), done.packing objects: 16% (1/6)
-    remote: Compressing objects: 100% (2/2), done.
-    remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
-    Checking connectivity... done.
-    </pre>
-    
-
+    <div id="League Of Legends">
+        <h1>恭喜WE</h1>
+        <hr />
+        <h3>S7全球英雄联盟全球总决赛</h3>
+        <a href="lpl.qq.com" target="_blank">S7全球英雄联盟全球总决赛官方网址</a>
+        <table summary="小组赛分组">
+            <caption>S7全球英雄联盟全球总决赛小组赛分组</caption>
+            <tbody>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                </tr>
+                <tr>
+                    <td>SKT</td>
+                    <td>LZ</td>
+                    <td>RNG</td>
+                    <td>WE</td>
+                </tr>
+                <tr>
+                    <td>C9</td>
+                    <td>IMT</td>
+                    <td>SSG</td>
+                    <td>MSF</td>
+                </tr>
+                <tr>
+                    <td>AHQ</td>
+                    <td>GAM</td>
+                    <td>G2</td>
+                    <td>TSM</td>
+                </tr>
+                <tr>
+                    <td>EDG</td>
+                    <td>FNC</td>
+                    <td>FB</td>
+                    <td>FW</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="http://www.people.com.cn/mediafile/pic/20171009/82/15721660956757782926.jpg" alt="S7全球英雄联盟全球总决赛小组赛赛程" title="S7 LOL">
+        <hr />
+		<h1>关于你</h1>
+        <form method="post" action="save.php">   <!--action method什么意思-->
+            <h3>Personal Information</h3>  
+			<br />
+            <input type="text" name="UserName" value="Your Name or Nick Name" />
+			<br />
+            <input type="password" name="Password" value="Your Password">
+			<br />
+			<lable>Gender:</label>
+            <lable id="male">男</lable>   <!--lable 的用法-->
+            <input type="radio" value="1" name="gender" id="male"> ，<!--value name 各个地方的含义-->
+            <lable id="female">女</lable>
+            <input type="radio" value="2" name="gender" id="female">
+			<br />
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+			<br />
+			<h3>关于WE</h3>
+            <textarea rows="8" cols="10">你支持WE的队员以及理由</textarea>
+			<br />
+			</br>
+            <label>你喜欢的队员</label>
+			<br />
+            <input type="checkbox" name="top" value="957">957<br />
+            <input type="checkbox" name="mid" value="xiye">xiye<br />
+            <input type="checkbox" name="adc" value="mystic">mystic<br />
+            <input type="checkbox" name="support" value="zero&ben">zero&ben<br />
+            <input type="checkbox" name="" value="condi" checked="checked">condi<br />
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </form>
+        <hr />
+        <a href="mailto:77777@git.com?cc=xiaokeai@qq.com&subject=恭喜WE&body="我们都是60e">与我联系</a>
 </body>
 </html>
