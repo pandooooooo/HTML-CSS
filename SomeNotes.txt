@@ -1,0 +1,15 @@
+疑难点：
+1、label标签
+2、name与value的用途和区别
+3、action与method
+4、id的用法
+
+重点：
+1、表单交互
+	* 单选表格
+	<input type="radio" name="" value="">
+	* 多选表格
+	<input type="checkbox" name="" value="">
+2、表格用法
+	<table summary="摘要">
+		<caption>
