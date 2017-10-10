@@ -1,15 +1,154 @@
 疑难点：
 1、label标签
+	<lable for="控件id名称">
+	label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。
+	如果你在 label 标签内点击文本，就会触发此控件。
+	当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。
+	
+	不加label的话鼠标一定要点击小圆点才能激活条目,加了label可以直接点击对应的文字来激活条目
+	label的作用就是获得焦点，把鼠标移动到文字上，同样可以激活控件进行选择、输入。但是如果不加label的话，鼠标就必须移动到控件上面。
 2、name与value的用途和区别
+	*name属性：通过为表单命名可以控制表单与后台程序之间的关系。
+	
+	按钮中用的value 指的是按钮上要显示的文本 比如“确定”“删除”等 
+	复选框用的value 指的是这个复选框的值 
+	单选框用的value 和复选框一样 
+	下拉菜单用的value 是列表中每个子项的值 
+	隐藏域用的value 是框里面显示的内容 
+
+	在后台如果你想得到复选框的内容 就是value 来取 
+	当你在接收表单数据的页面中获取数据时，得到的就是value的值 
+
+	name是控件的名称（多个控件可以取同一个名称），value是控件的值； 
+	并不是所有控件的value都会显示出来，比如 checkbox, radio, hidden； 
+	定义控件的 name和value 就可以在服务器上获取这个控件和它的值； 
+	没看到 submit 的name，并不表示浏览器忽略了它的 name，在提交之前它也被浏览器定义了 name，在服务器上一样可以得到它的 name 和 value； 
+	控件不定义name/value也可以显示，只是为了方便在服务器接收和区别，才定义它的 name/value，当然按钮的 value 不光是存放它的值，也用来显示。
+
 3、action与method
+	表单信息的处理过程为：当单击表单中的提交按钮时，输入在表单中的信息就会上传到服务器中。
+	然后由服务器的有关应用程序进行处理，处理后或者将用户提交的信息储存在服务器端的数据库中，或者将有关的信息返回到客户端浏览器上。
+	基本语法：
+	<form name="form_name"  action="url"  method="form_method"  enctype="value"  target="目标页面">
+	.........
+	</form>
+
+	name:表单的名称
+	method:定义表单结果从浏览器传送到服务器的方法，一般有两种方法get和post
+	action：用来定义表单处理程序(一个ASP,CGI等程序)的位置( 相对地址或绝对地址)
+	enctype:设置表单资料的编码方式
+	target:设置返回信息的显示方式
+	
+	method：当不指明是哪种方式时，默认为GET方式。
+	*GET方法将表单数据以名称/值对的形式附加到 URL中，对提交信息的长度进行了限制，不可以超过8192个字符。
+	如果信息太长，将被截去，从而导致意想不到的处理结果。
+	GET方法不具有保密性，不适合处理如信用卡卡号等要求保密的内容，而且不能传送非ASCII码的字符。（密码或其他敏感信息在浏览器地址栏中是可见的）
+	*POST方法是将用户在表单中填写的数据包含在表单的主体中，一起传送到服务器上的处理程序中。该方法以 HTTP post 事务的方式来传递表单数据
+	与 "get" 相比，"post" 方法更健壮更安全，而且 "post" 没有容量限制
+
+	action：规定当提交表单时，向何处发送表单数据。
+	在 HTML5 中，action 属性不再是必需的。
+	当表单提交时向何处发送表单数据。
+	可能的值：
+	绝对 URL - 指向另一个网站（比如 action="http://www.example.com/example.htm"）
+	相对 URL - 指向网站内的一个文件（比如 action="example.htm"）
 4、id的用法
+	name：指定标签名称（非唯一）
+		*<input type="text" name="username">
+		应用：
+		*form表单：name可作为转递给服务器表单列表的变量名；如上面的传到服务器的名称为：username='text的值'。
+		*input type='radio'单选标签：把几个单选标签的 name设为一个相同值时，将会进行单选操作。
+			<input type="radio" name='sex'/>男
+			<input type="radio" name='sex'/>女
+		*快速获取一组name相同的标签：获取拥有相同name的标签，一起进行操作，如:更改属性、注册事件等。
+			function changtxtcolor() {
+				var txts = document.getElementsByName('txtcolor'); //获取所有name=txtcolor 的标签
+				for (var i = 0; i < txts.length; i++) { //循环遍历标签，并把背景色改为red
+					txts[i].style.backgroundColor = 'red';
+				}
+			}
+			
+	id：指定标签的唯一标识
+	应用：
+	*根据提供的唯一id号，快速获取标签对象。如：document.getElementById(id)
+	*用于充当label标签for属性的值：示例：<label for='userid'>用户名：</label>，表示单击此label标签时，id为userid的标签获得焦点。
+	
+	class：指定标签的类名（非唯一）
+	可以把多个类，放在一个class属性里，但必须用空格隔开；如：class='btnsubmit btnopen'。
+	应用：
+	*CSS操作，把一些特定样式放到一个class类中，需要此样式的标签，可以在添加此类。
+5、target的用法
+	设置表单信息返回的窗口。
+	值有以下几种：
+	_blank:将返回信息显示在新开的浏览器窗口中
+	_parent:将返回信息显示在父级浏览器窗口中
+	_self:将返回信息显示在当前浏览器窗口中
+	_top:将返回信息显示在顶级浏览器窗口中
+
 
 重点：
 1、表单交互
+	*表单标签（交互的总标签 其他标签都在form之内）
+	<form action="服务器文件" method="传送方式">
+	action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。
+	method ： 数据传送的方式（get/post）。
+	</form>
 	* 单选表格
 	<input type="radio" name="" value="">
 	* 多选表格
-	<input type="checkbox" name="" value="">
+	<input type="checkbox" name="" value="" (checked="checked")>
+	*下拉列表框
+	<option value="xxx" （select="selected"）>选项</option>
+	*用户名、密码、提交、重置
+	<input type="text/password/reset/submit" name="" value="">
 2、表格用法
-	<table summary="摘要">
-		<caption>
+	<table summary="表格简介文本">
+		<caption>标题文本</caption>
+		<tbody>
+			<tr>
+				<th></th>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+3、div
+	把一些标签放进<div>里，划分出一个独立的逻辑部分。
+	可以为这一个独立的逻辑部分设置一个名称，用id属性来为<div>提供唯一的名称。
+	
+
+其他：
+1、html结构
+	<!DOCTYPE HTML>
+	<html>
+		<head>
+		</head>
+		<body>
+		</body>
+	</html>
+	
+	<!--注释文字-->
+2、闭合标签
+	*<p> <hx>
+	*<strong> <em>
+	*<blackquote> <q> 
+	*<span>
+	*<address>
+	*<code> <pre>
+	*<a href="目标网址" title=“鼠标滑过显示的文本” (targe="_blank")>链接显示的文本</a>
+	*<a href="mailto:xx@yy.com"?cc=zz@yy.cm&bcc=bb@yy.com&subject=主题&body=邮件显示的内容>
+	注意：如果mailto后面同时有多个参数的话，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
+	*<ul>
+		<li></li>
+	 </ul>
+	 <ol>
+		<li></li>
+	 </ol>
+	*<address>地址显示为斜体</address>
+	注：和直接用文本写有什么区别 只有斜体的区别么？？？？
+3、非闭合标签
+	*<br />
+	*<hr />
+	*&nbsp
+	*<img src="网址" alt="加载不出来显示的文本" title="鼠标滑过显示的文本" >
