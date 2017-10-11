@@ -91,12 +91,12 @@
 		</div>
 		<form method="post">
 			<label>请输入邮箱地址</label>
-			<input type="text" name="mail" value="MailAddress"> <br />
+			<input type="text" name="mail" placeholder="MailAddress"> <br />
 			<label>邮箱地址请按要求格式输入</label> <br />
 			<label>请输入密码:</label>
-			<input type="password" name="key" value="key">
+			<input type="password" name="key" placeholder="key">
 			<label>请重复输入密码：</label>
-			<input type="password" name="key" value="key2"> <br />
+			<input type="password" name="key" placeholder="key2"> <br />
 			<label>密码请为6-16位英文数字</label> <br />
 			<label>性别：</label>
 			<label id="male">male</label>
