@@ -1,0 +1,130 @@
+网站标题和文章标题
+<head>！！！！！
+
+<base> 标签
+http://www.w3school.com.cn/html5/html5_base.asp
+
+一个网页中只能使用一次title标签，是标识一个网页唯一标题作用，而且根据W3C标准必须放入一个网页中头部head标签内。
+<title>
+
+图片加在段落里面还是外面
+
+表格某一行多一列
+
+侧栏
+
+表单交互中输入文字 label？？？
+
+灰色文字
+
+            <lable id="female">女</lable>
+            <input type="radio" value="2" name="gender" id="female">
+			没有id时 value就是显示的值
+			有了id后 可省略？？？
+
+<textarea rows="" cols=""></textarea>
+
+<input type="text" valeu="xxx"> xx是显示在文本框的文字 但是是黑色的且必须一个一个删除
+
+下拉多选框出问题了
+问题代码：
+			<label>City:</label>
+			<option value="天津" select="selected">天津</option>
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+			<option value="深圳">深圳</option>
+			<option value="广州">广州</option>
+正确：
+			<select>
+				<option value="天津" select="selected">天津</option>
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="深圳">深圳</option>
+				<option value="广州">广州</option>
+			</select>	
+table标签出问题了
+草！！！拼错了！！！！
+问题代码：
+		<tabel summary="we members">
+			<caption>WE Members</caption>
+			<tbody>
+				<tr>
+					<th>TOP</th>
+					<th>MID</th>
+					<th>ADC</th>
+					<th>SUPPORT</th>
+					<th>JUNGLE</th>
+				</tr>
+				<tr>
+					<td>957</td>
+					<td>xiye</td>
+					<td>mystic</td>
+					<td>zero</td>
+					<td>condi</td>
+				</tr>
+			</tbody>
+		</tabel>
+		
+th和td比较会加粗
+
+？？？？？？？没有区别啊 错误的无法实现
+错误：
+		<sytle type="text/css">
+			table tr td,th{border:1px solid #000;}
+		</style>
+		
+		正确：
+				<style type="text/css">
+			table tr td,th{border:1px solid #000;}
+		</style>
+
+head结构
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+缩进的实现
+https://lms.im/css/text-indent-and-picture-indentation.html
+文字:text-indent
+图片:
+段落前面空两个字的距离，不要再使用空格了。应该使用首行缩进text-indent。
+
+text-indent可以使得容器内首行缩进一定单位。比如中文段落一般每段前空两个汉字。
+
+<style type="text/css">
+
+p{
+
+text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+
+}
+
+</style>
+
+ 
+
+注：div标签不要忘记起始符。text-indent只对p或div标签有效，对br标签不生效，原因是br标签是换行标签不是分段标签。
+
+用CSS实现段落首缩进两个字符，实现首行缩进的通用方法是加四个小角空格。
+
+在style里定义如下缩进样式：.suojin{text-indent:2em}
+
+在需要缩进的地方使用class="suojin"即可，比如用一个div定义一整块段落首先缩进，
+
+凡在div区域里，浏览器一碰上p语句（即一个新段的开始），就会执行.suojin所定义的缩进。
+
+也可以在正文中使用嵌入式CSS样式来定义，下面举个实例（使用时请将尖括号改为小角尖括号）：
+
+<div style="text-indent:2em">
+
+<p>段落一</p>
+
+<p>段落二</p>
+
+<p>段落三<p>
+
+</div>
+
+可加了这个缩进后当遇到正文内容中有独立段落的图片时，图片也会被缩进，这样会很影响排版。而且对于缩进后的图片大小也不好把握，对于自适应主题尤其如此。所以很多人因为搞不定图片这个问题最后放弃了使用段落首行缩进。
+
+其实text-indent有个很奇怪的属性，就是其内部元素遇到float或者display: block后就不继承外部这个缩进的属性了，也就是说，只要给图片加上float或者display: block的 CSS 属性后，图片的缩进会自动失效。
+
+但是为了排版的效果，一般都使用display:block;，这样图片就不会与文字并排，图片单独占一行。
