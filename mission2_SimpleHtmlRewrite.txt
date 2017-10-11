@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<!--网站一级标题和文章一级标题该怎么实现 head里的文字和body里的有什么区别 比如那个ul-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>S7英雄联盟全球总决赛（我在title标签内，我显示在IE最顶部标题地方）</title>
+		<ul>
+			<li><a href="#LeftH">信息填写</a></li>
+			<li><a href="#">RNG</a</li>
+			<li><a href="#">WE</a></li>
+		</ul>
+
+		<style type="text/css">
+			table tr td,th{border:1px solid #000;}
+			#CondiPic{ text-indent:35px}
+		</style>
+		
+	</head>
+
+	<body>
+		<h1>恭喜WE</h1>
+		<h2>WE小组第一出线</h2>
+		<p>文章作者&nbsp&nbsp文章发表时间</p>
+		<p>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE <br />换行了 <br />
+		恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE<a href="http://weibo.com/teamwe?topnav=1&wvr=6&topsug=1" title="we微博">condi 957 mystic xiye ben zero</a>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE</p>
+		<img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/ossweb_img_qq_com/97de6b4857b7be1da4169ee7c2495ad7.png" alt="WE合照" title="WE合照">
+		<p>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE <br />换行了 <br />
+		恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE<a href="http://weibo.com/teamwe?topnav=1&wvr=6&topsug=1" title="we微博">condi 957 mystic xiye ben zero</a>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE</p>
+
+		<h1>RNG加油</h1>
+		<h2>RNG小组第一出线</h2>
+		<p>文章作者&nbsp&nbsp文章发表时间</p>
+		<p>RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油 <br />换行了<br />RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油RNG加油<a href="#" title="RNG微博">UZI mlxg 小虎</a></p>
+		<img scr="" alt="RNG合照" title="RNG合照" />
+		<ul>
+			<li>957</li>
+			<li>condi</li>
+			<li>mystic</li>
+		</ul>
+
+		<h2>照片</h2>
+		<div id="CondiPic">
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+			<p>condi</p>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+		</div>
+
+		<h1>表单交互</h1>
+		<h2>More Practice</h2>
+		<p>文章作者&nbsp&nbsp文章发表时间</p>
+		<ol>
+			<li>table</li>
+			<li>form</li>
+			<li>label</li>
+		</ol>
+		<table summary="we members">
+			<caption>WE Members</caption>
+			<tbody>
+				<tr>
+					<th>TOP</th>
+					<th>MID</th>
+					<th>ADC</th>
+					<th>SUPPORT</th>
+					<th>JUNGLE</th>
+				</tr>
+				<tr>
+					<td>957</td>
+					<td>xiye</td>
+					<td>mystic</td>
+					<td>zero</td>
+					<td>condi</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!--需要用css实现？-->
+		<div id="LeftH">
+			<h1>侧栏标题</h1>
+			<h2>侧栏注册窗口标题</h2>
+		</div>
+		<form method="post">
+			<label>请输入邮箱地址</label>
+			<input type="text" name="mail" value="MailAddress"> <br />
+			<label>邮箱地址请按要求格式输入</label> <br />
+			<label>请输入密码:</label>
+			<input type="password" name="key" value="key">
+			<label>请重复输入密码：</label>
+			<input type="password" name="key" value="key2"> <br />
+			<label>密码请为6-16位英文数字</label> <br />
+			<label>性别：</label>
+			<label id="male">male</label>
+			<input type="radio" name="sex" value="male" id="male">
+			<label id="female">female</label>
+			<input type="radio" name="sex" value="female" id="female" checked="checked">
+			<label>City:</label>
+			<select>
+				<option value="天津" select="selected">天津</option>
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="深圳">深圳</option>
+				<option value="广州">广州</option>
+			</select>
+			<label>Hobby:</label>
+			<label id="sport">Sport</label>
+			<input type="checkbox" name="hobby" value="Sport" id="sport">
+			<label id="paint">Paint</label>
+			<input type="checkbox" name="hobby" value="Paint" id="paint">
+			<label id="code">Code</label>
+			<input type="checkbox" name="hobby" value="1" id="code">
+			<label>Description:</label>
+			<textarea rows="3" cols="5">Description about Yourself</textarea>
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+		</form>
+	</body>
+</html>
