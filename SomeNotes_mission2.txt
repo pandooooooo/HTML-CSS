@@ -1,130 +1,123 @@
-网站标题和文章标题
-<head>！！！！！
+问题点：
+1、下拉多选框
+	*总体外面要加<select>标签
+	<select>
+		<option value="" (select="selected")>xxx</option>
+	</select>
+2、table标签
+	*单词拼错了...
+	*th和td相比 th中的文字会加粗变大
+3、<title>和<hx>
+	*<title>
+	一个网页中只能使用一次title标签，是标识一个网页唯一标题作用，而且根据W3C标准必须放入一个网页中头部head标签内。
+	显示在IE最顶部标题地方。
+4、value和id共存时
+	<lable id="female">女</lable>
+	<input type="radio" value="2" name="gender" id="female">
+	没有id时 value就是显示的值
+	有了id后 可省略？？？
+5、交互文本框内的灰色文字
+	*<input type="text" value="xxx"> xxx是显示在文本框的文字 但是是黑色的且必须一个一个删除
+	*placeholder
+	<input type="text" placeholder="xxx"> xxx为灰色文字，输入其他文字即消失
+6、<textarea rows="" cols=""></textarea> 
+	*！！！！“s”
+7、网站标题和文章标题？？？？
+8、表格某一行多一列 ？？？？
+	*rowspan 属性实现HTML表格中一列跨越多行
+	<td>1000</td>
+    <tdrowspan="2">2000+5000</td>
+    <td>3000</td>
+	*colspan 属性实现HTML表格中一行跨越多列
+	<td>2003年</td>
+    <td>1000</td>
+    <tdcolspan="2">2000+3000</td>
+9、图片（行内元素）
+	*加在段落里面，和文字紧连
+	*加在段落之间，两个段落都为block，所以图片独占一行
 
-<base> 标签
-http://www.w3school.com.cn/html5/html5_base.asp
+	
+	
+疑难点：
+1、表单交互中输入文字 
+	*label标签
+	<label>text</label>
+2、<head>里结构
+	<head> 元素是所有头部元素的容器。
+	<head> 内的元素可包含脚本，指示浏览器在何处可以找到样式表，提供元信息，等等。
+	可以添加到 head 的标签：<title>、<base>、<link>、<meta>、<script> 以及 <style>。
+	*<title> 必须存在
+	定义浏览器工具栏中的标题
+	提供页面被添加到收藏夹时显示的标题
+	显示在搜索引擎结果中的页面标题
+	*<base>
+	为页面上的所有链接规定默认地址或默认目标。
+	通常情况下，浏览器会从当前文档的 URL 中提取相应的元素来填写相对 URL 中的空白。
+	使用 <base> 标签可以改变这一点。浏览器随后将不再使用当前文档的 URL，而使用指定的基本 URL 来解析所有的相对 URL。这其中包括 <a>、<img>、<link>、<form> 标签中的 URL。
+	||假设图像的绝对地址是：
+	<img src="http://www.w3school.com.cn/i/pic.gif" />
+	||插入 <base> 标签，规定页面中所有链接的基准 url：
+	<head>
+	<base href="http://www.w3school.com.cn/i/" />
+	</head>
+	在上例中的页面上插入图像时，我们必须规定相对的地址，浏览器会寻找文件所使用的完整 URL：
+	<img src="pic.gif" />
+	*<link>
+	定义文档与外部资源之间的关系。
+	最常用于连接样式表。
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+	*<style>
+	用于为 HTML 文档定义样式信息。
+	在 style 元素内规定 HTML 元素在浏览器中呈现的样式。
+	*<meta>
+	元数据（metadata）是关于数据的信息。
+	元数据可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 web 服务。
+	<meta> 标签提供关于 HTML 文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。
+	典型的情况是，meta 元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。
+		||一些搜索引擎会利用 meta 元素的 name 和 content 属性来索引您的页面。
+		下面的 meta 元素定义页面的描述：
+		<meta name="description" content="Free Web tutorials on HTML, CSS, XML" />
+		下面的 meta 元素定义页面的关键词：
+		<meta name="keywords" content="HTML, CSS, XML" />
+		name 和 content 属性的作用是描述页面的内容。
+	*<script>
+	用于定义客户端脚本，比如 JavaScript。
+			
+CSS实现
+1、侧栏固定
 
-一个网页中只能使用一次title标签，是标识一个网页唯一标题作用，而且根据W3C标准必须放入一个网页中头部head标签内。
-<title>
+2、缩进
+	text-indent
+	*text-indent可以使得容器内首行缩进一定单位。比如中文段落一般每段前空两个汉字。
+	<style type="text/css">
+	p{text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+	</style>
+	注：div标签不要忘记起始符。text-indent只对p或div标签有效，对br标签不生效，原因是br标签是换行标签不是分段标签。
+	用CSS实现段落首缩进两个字符，实现首行缩进的通用方法是加四个小角空格。
+	在style里定义如下缩进样式：.suojin{text-indent:2em}
+	在需要缩进的地方使用class="suojin"即可，比如用一个div定义一整块段落首先缩进，凡在div区域里，浏览器一碰上p语句（即一个新段的开始），就会执行.suojin所定义的缩进。
+	也可以在正文中使用嵌入式CSS样式来定义，下面举个实例：
+	<div style="text-indent:2em">
+		<p>段落一</p>
+		<p>段落二</p>
+		<p>段落三<p>
+	</div>
+	可加了这个缩进后当遇到正文内容中有独立段落的图片时，图片也会被缩进，这样会很影响排版。而且对于缩进后的图片大小也不好把握，对于自适应主题尤其如此。
+	其实text-indent有个很奇怪的属性，就是其内部元素遇到float或者display: block后就不继承外部这个缩进的属性了.
+	只要给图片加上float或者display: block的 CSS 属性后，图片的缩进会自动失效。	但是为了排版的效果，一般都使用display:block;，这样图片就不会与文字并排，图片单独占一行。
 
-图片加在段落里面还是外面
-
-表格某一行多一列
-
-侧栏
-
-表单交互中输入文字 label？？？
-
-灰色文字
-
-            <lable id="female">女</lable>
-            <input type="radio" value="2" name="gender" id="female">
-			没有id时 value就是显示的值
-			有了id后 可省略？？？
-
-<textarea rows="" cols=""></textarea>
-
-<input type="text" valeu="xxx"> xx是显示在文本框的文字 但是是黑色的且必须一个一个删除
-
-下拉多选框出问题了
-问题代码：
-			<label>City:</label>
-			<option value="天津" select="selected">天津</option>
-			<option value="北京">北京</option>
-			<option value="上海">上海</option>
-			<option value="深圳">深圳</option>
-			<option value="广州">广州</option>
-正确：
-			<select>
-				<option value="天津" select="selected">天津</option>
-				<option value="北京">北京</option>
-				<option value="上海">上海</option>
-				<option value="深圳">深圳</option>
-				<option value="广州">广州</option>
-			</select>	
-table标签出问题了
-草！！！拼错了！！！！
-问题代码：
-		<tabel summary="we members">
-			<caption>WE Members</caption>
-			<tbody>
-				<tr>
-					<th>TOP</th>
-					<th>MID</th>
-					<th>ADC</th>
-					<th>SUPPORT</th>
-					<th>JUNGLE</th>
-				</tr>
-				<tr>
-					<td>957</td>
-					<td>xiye</td>
-					<td>mystic</td>
-					<td>zero</td>
-					<td>condi</td>
-				</tr>
-			</tbody>
-		</tabel>
-		
-th和td比较会加粗
-
+未解决问题：
 ？？？？？？？没有区别啊 错误的无法实现
 错误：
-		<sytle type="text/css">
-			table tr td,th{border:1px solid #000;}
-		</style>
+	<sytle type="text/css">
+	table tr td,th{border:1px solid #000;}
+	</style>
 		
-		正确：
-				<style type="text/css">
-			table tr td,th{border:1px solid #000;}
-		</style>
+正确：
+	<style type="text/css">
+	table tr td,th{border:1px solid #000;}
+	</style>
+	
+?????????????图片无法缩进 只有<p>可以缩进
 
-head结构
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-缩进的实现
-https://lms.im/css/text-indent-and-picture-indentation.html
-文字:text-indent
-图片:
-段落前面空两个字的距离，不要再使用空格了。应该使用首行缩进text-indent。
-
-text-indent可以使得容器内首行缩进一定单位。比如中文段落一般每段前空两个汉字。
-
-<style type="text/css">
-
-p{
-
-text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
-
-}
-
-</style>
-
- 
-
-注：div标签不要忘记起始符。text-indent只对p或div标签有效，对br标签不生效，原因是br标签是换行标签不是分段标签。
-
-用CSS实现段落首缩进两个字符，实现首行缩进的通用方法是加四个小角空格。
-
-在style里定义如下缩进样式：.suojin{text-indent:2em}
-
-在需要缩进的地方使用class="suojin"即可，比如用一个div定义一整块段落首先缩进，
-
-凡在div区域里，浏览器一碰上p语句（即一个新段的开始），就会执行.suojin所定义的缩进。
-
-也可以在正文中使用嵌入式CSS样式来定义，下面举个实例（使用时请将尖括号改为小角尖括号）：
-
-<div style="text-indent:2em">
-
-<p>段落一</p>
-
-<p>段落二</p>
-
-<p>段落三<p>
-
-</div>
-
-可加了这个缩进后当遇到正文内容中有独立段落的图片时，图片也会被缩进，这样会很影响排版。而且对于缩进后的图片大小也不好把握，对于自适应主题尤其如此。所以很多人因为搞不定图片这个问题最后放弃了使用段落首行缩进。
-
-其实text-indent有个很奇怪的属性，就是其内部元素遇到float或者display: block后就不继承外部这个缩进的属性了，也就是说，只要给图片加上float或者display: block的 CSS 属性后，图片的缩进会自动失效。
-
-但是为了排版的效果，一般都使用display:block;，这样图片就不会与文字并排，图片单独占一行。
+ ？？？？???表格某一行多一列
