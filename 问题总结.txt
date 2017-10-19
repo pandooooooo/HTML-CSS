@@ -1,0 +1,73 @@
+1. 排版上面的问题
+    css不要写在一行內
+    比如
+        body{background-color: grey;}
+        改为
+        body {
+            background-color: grey;
+        }
+
+2. 目录结构
+    修改目录结构，在html文件中通过link和script标签引入css文件和js文件
+    笔记是放在对应的任务文件夹中还是单独建一个notes目录存储可自行决定
+    目录结构实例如下
+    -mission3
+        -html文件夹(存放.html文件 如果只有一个html文件可以忽略 下方的css和js也一样)
+            -misson.html
+        -css文件夹(存放.css文件)
+            -mission.css
+        -js文件夹(如果将来有的话)(存放.js文件)
+            -mission.js
+    我把mission1和misson2的html文件挪到对应文件夹了
+
+3. 元素id或者class的命名 全部采用驼峰式 
+    第一个单词首字母小写，后面单词首字母大写
+    比如UserInformation应改为userInfomation 因为user是第一个单词 information是第二个单词(任务三)
+    而且尽量避免名称过长 比如可以改成userInfo
+
+4. 都尝试html5中出现的新标签 比如导航栏可以从
+    <div id="Navigation">变成<nav>元素
+    链接地址: https://www.w3cschool.cn/htmltags/tag-nav.html
+
+5. 在html中不要出现重复的id
+    场景 任务二 misson2_SimpleHtmlRewrite.html
+    105行
+    <label id="male">male</label>
+	<input type="radio" name="sex" value="male" id="male">
+
+6. 如果需要默认选中select下拉框的一个option选项 直接为这个option标签设置一个selected就可以 select="selected"的写法是错误的
+    场景 任务二 misson2_SimpleHtmlRewrite.html
+    110行的select 和 111行的option天津
+    因为默认是选择第一个元素 所以这么写看起来没问题 但是实际上是没有效果的
+    应该改成<option value="天津" selected></option>
+    附加要求：到w3c上看一下selected这个属性 包括含义和取值类型等
+    链接地址: https://www.w3cschool.cn/htmltags/tag-option.html
+
+7. mission2表格实现效果不完全
+
+8. 针对我们提出的value和id共存时的问题（SomeNotes_mission2 问题4)
+    我写了inputTest.html 我们可以在里面修改体会一下
+    其实id和value并没有那种直接的冲突或者连接关系
+    有没有id与input显示什么值也没有关系
+    更多时候是通过id可以更快的定位到当前元素并获取值（getElementById或者querySelector) 当然这里是js的问题
+    另外input的id还有一层作用 就是与label配合使用 看如下例子（在inputTest中也有)
+        <label for="name">姓名</label>
+        <input type="text" id="name"></input>
+    当label的for属性的值等于input的id属性的值时 在界面上可以通过点击"姓名"直接聚焦到输入框
+
+9. 右右在SomeNotes_mission2最后提出的问题
+    <sytle type="text/css">
+	    table tr td,th{border:1px solid #000;}
+	</style>
+    是不是第一个style拼错了啊小肉脸～
+
+10. 在SomeNotes_mission3中的重点部分 第一个居中是否了解具体是那个属性呈现出了居中效果
+
+11. misson3让最后的表单div不缩小 取消width:200px属性
+
+总结：
+    我们小可爱进步还是很大哒～html和css这里很多地方就是抠细节所以要稍微我会多说一点～不过也都是经验性的问题为主～
+    然后其实百度学院每道题下面都有别人的答案～如果觉得不知道看哪个可以看一下我的～代码也在github上
+    (骄傲脸！就是学霸榜单第四名的本宝宝！
+    百度学院：http://ife.baidu.com/user/profile/id/2245?activeTab=course
+    github地址：https://github.com/smilebuz/ife2017_missions
