@@ -1,0 +1,56 @@
+居中
+	*水平居中
+		text-align:center & margin:0 auto
+		在块级父容器中让行内元素居中，只需使用text-align: center;
+ 		条件：子元素必须没有被float影响
+			  margin不能被position影响。
+ 	*文字垂直居
+		line-height
+		当值等于父元素的height值时，内部的文字就会自动的垂直居中了。
+	*position
+		父元素定义为positon:relative，定义子元素的height和width。子元素再打上top:50%;left:50%。
+		父元素大小已知：margin-top:一半的height值的的负数;margin- left:一半的weight值的负数。
+		父元素大小未知：transform: translate(-50%,-50%);
+						不知道元素的高度，那么就需要先将元素定位到容器的中心位置，然后使用 transform 的 translate 属性，将元素的中心和父容器的中心重合。
+        
+	*其他
+	1、子元素为position:absolute
+	父元素设定为position:relative，位置相对于父元素移动。
+	父元素没有设定，位置相对于body移动。
+	2、子元素position:relative
+	无论父元素position设定为什么，都相对于父元素移动。
+	
+
+简单图形
+	HTML:
+	<div class="graph"></div>
+	CSS:
+	*正方形
+	.graph{
+	width:100px;
+	height:100px;
+	}
+	*圆形
+	.graph{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	}
+	*上三角
+	.graph{
+     width: 0;
+     height: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-bottom: 100px solid red;
+	}
+
+其他：
+1、子元素选择  :nth-child(n){}
+	:nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型。
+	n 可以是数字、关键词或公式。	
+	*使用公式 (an + b)。描述：表示周期的长度，n 是计数器（从 0 开始），b 是偏移值。
+	*Odd 和 even 是可用于匹配下标是奇数或偶数的子元素的关键词（第一个子元素的下标是 1）。
+2、隐藏超出div的内容
+	*overflow:hidden 隐藏对象设置宽度和高度以外装不下的内容。
+
