@@ -72,14 +72,20 @@
       }
       #userInformation{
         float: right;
+        width: 350px;
       }
-      /*condi图片*/
+          /*WE部分图片超出问题*/
+
       section{
         border: 0.1em grey solid;
-        overflow: hidden;
+        float: left;
+        margin-right: 20px;
+        width: 80px;
+        height: 80px;
       }
       section p{
         text-align: center;
+        line-height: 0;
       }
       /*表格*/
       #gameSchedule table{
@@ -97,14 +103,19 @@
         text-align: center;
       }
       /*交互部分*/
+      .descrip{
+        display: inline-block;
+        width: 10em;
+        text-align: right;
+      }
       .verify{
         width: 100%;
       }
-      .descrip{
-        float: left;
-        width: 120px;
-        text-align: right;
-        margin: 2em;
+      .note{
+        display: block;
+        font-size: 13px;
+        color: grey;
+        text-indent: 12.5em;
       }
     </style>
   </head>
@@ -124,7 +135,7 @@
       <h5>文章作者&nbsp&nbsp文章发表时间</h5>
       <p>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE <br />换行了 <br />
       恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE<a href="http://weibo.com/teamwe?topnav=1&wvr=6&topsug=1" title="we微博">condi 957 mystic xiye ben zero</a>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE</p>
-      <img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/ossweb_img_qq_com/97de6b4857b7be1da4169ee7c2495ad7.png" alt="WE合照" title="WE合照" />
+      <img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/ossweb_img_qq_com/97de6b4857b7be1da4169ee7c2495ad7.png" alt="WE合照" title="WE合照" width="500em" height="500em"/>
       <p>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE <br />换行了 <br />
       恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE<a href="http://weibo.com/teamwe?topnav=1&wvr=6&topsug=1" title="we微博">condi 957 mystic xiye ben zero</a>恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE恭喜WE</p>
       <ul>
@@ -143,15 +154,13 @@
         <input type="text" name="mail" id="mail"placeholder="xxx@zz.com">
         <br>
         <label class="note">邮箱地址请按要求格式输入</label>
-        <br>
         <label for="password" class="descrip">请输入密码 </label>
         <input type="password" name="password" id="password">
         <br>
         <label for="password2"class="descrip">请重复输入密码 </label>
         <input type="password" name="password2" id="password2">
         <br>
-        <label class="note">密码请为6-16位英文数字<label>
-        <br>
+        <label class="note">密码请为6-16位英文数字</label>
         <label class="descrip">性别 </label>
         <label for="male">男</label>
         <input type="radio" name="sex" value="男" id="male">
@@ -192,23 +201,43 @@
       <h2>照片</h2>
       <section>
         <p>condi</p>
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
       </section>
       <section>
         <p>condi</p>
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
       </section>
       <section>
         <p>condi</p>
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
       </section>
       <section>
         <p>condi</p>
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
       </section>
       <section>
         <p>condi</p>
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" />
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
+      </section>
+      <section>
+        <p>condi</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
+      </section>
+      <section>
+        <p>condi</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
+      </section>
+      <section>
+        <p>condi</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
+      </section>
+      <section>
+        <p>condi</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
+      </section>
+      <section>
+        <p>condi</p>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507697481045&di=9f4bbb4afae538198b8eb3692e3adeb4&imgtype=0&src=http%3A%2F%2Fwww.ooqiu.com%2Fuploads%2Fallimg%2F160205%2F172-160205152633H1.jpg" alt="condi向人杰" title="condi向人杰" width="50px" height="50px"/>
       </section>
     </div>
     <div id="gameSchedule">

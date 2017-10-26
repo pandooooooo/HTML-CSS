@@ -1,3 +1,12 @@
 ﻿id 进行 页面内链接
 
 css 交互框对其
+display:inline block inline-block
+规定宽度 右对齐
+
+
+<img src="" alt="" width="100%" height="100%">
+图片大小为所在容器的100%
+
+外容器为position：relative 内置为 absolute
+必须规定外容器的高度 否则高度为0 下面部分内容向上靠
