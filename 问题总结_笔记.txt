@@ -1,0 +1,32 @@
+﻿1、都尝试html5中出现的新标签 比如导航栏可以从
+    <div id="Navigation">变成<nav>元素
+    链接地址: https://www.w3cschool.cn/htmltags/tag-nav.html
+
+2、在html中不要出现重复的id
+    场景 任务二 misson2_SimpleHtmlRewrite.html
+    105行
+    <label id="male">male</label>
+	<input type="radio" name="sex" value="male" id="male">
+
+3、 如果需要默认选中select下拉框的一个option选项 直接为这个option标签设置一个selected就可以 select="selected"的写法是错误的
+    场景 任务二 misson2_SimpleHtmlRewrite.html
+    110行的select 和 111行的option天津
+    因为默认是选择第一个元素 所以这么写看起来没问题 但是实际上是没有效果的
+    应该改成<option value="天津" selected></option>
+    附加要求：到w3c上看一下selected这个属性 包括含义和取值类型等
+    链接地址: https://www.w3cschool.cn/htmltags/tag-option.html
+
+4、 其实id和value并没有那种直接的冲突或者连接关系
+    有没有id与input显示什么值也没有关系
+    更多时候是通过id可以更快的定位到当前元素并获取值（getElementById或者querySelector) 当然这里是js的问题
+    另外input的id还有一层作用 就是与label配合使用 看如下例子（在inputTest中也有)
+        <label for="name">姓名</label>
+        <input type="text" id="name"></input>
+    当label的for属性的值等于input的id属性的值时 在界面上可以通过点击"姓名"直接聚焦到输入框
+	
+问题：
+7. mission2表格实现效果不完全
+   ！！不会除了最后一行别的都增加一列的操作........
+
+
+
