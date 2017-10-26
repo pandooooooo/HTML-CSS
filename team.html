@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>战队们</title>
+    <style type="text/css">
+      /* Navigation */
+      .nav{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 120px;
+        margin: 20px;
+        background-color: #E0EEEE;
+      }
+      /* 队标分栏 */
+      .teamPic{
+        position: relative;
+        margin: 180px 20px 0 0;
+        background-color: #fff;
+        height: 450px;
+      }
+      .ig{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 30px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .chelsea{
+        position: absolute;
+        right: 30px;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .we{
+        position: absolute;
+        left:550px;
+      }
+      /* 战队简介 */
+      .teamIntro{
+        position: relative;
+        margin: 20px;
+        padding: 3em;
+
+      }
+      .weIntro{
+        /*position: absolute;*/
+        float: left;
+        border: 0.1em #000 solid;
+        width: 60%;
+        padding: 3em;
+      }
+      .igIntro{
+        /*position: absolute;*/
+        float: left;
+        margin-top: 3em;
+        border: 0.1em #000 solid;
+        width: 60%;
+        padding: 3em;
+      }
+      .chelseaIntro{
+        /*position: absolute;*/
+        float: left;
+        margin-top: 3em;
+        border: 0.1em #000 solid;
+        width: 60%;
+        padding: 3em;
+      }
+      .investigation{
+        float: right;
+        width: 25%;
+        border: 0.1em #000 solid;
+        padding: 3em;
+      }
+      /* REVIEW: 表单 */
+      form{
+        font-size: 1.5em;
+      }
+      .note{
+        width: 20em;
+        text-align: right;
+      }
+      /*细节*/
+      h2{
+        text-align: center;
+      }
+      p{
+        text-indent: 2em;
+      }
+      /*Table*/
+      table{
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+        margin: 0 2em 0 0;
+        font-family: cursive;
+      }
+      table,th,td{
+        border: 0.1em grey solid;
+      }
+      th{
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+
+    </div>
+    <div class="teamPic">
+      <div class="ig">
+        <img src="http://wx4.sinaimg.cn/mw1024/7d2703cdgy1fkggipdxnzj21e00xc18h.jpg" alt="rookie" width="100%" height="100%">
+      </div>
+      <div class="we">
+        <img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/ossweb_img_qq_com/13f3f8462b3cf95eebfc94df9e0133d1.png" width="65%" height="65%">
+      </div>
+      <div class="chelsea">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509592390&di=6a830317782ecbae09cfa19a6abf1277&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.ouou.cn%2Fuploadfile%2F2017%2F0701%2F20170701062521960.jpg" alt="切尔西" width="100%" height="100%">
+      </div>
+    </div>
+    <div class="teamIntro">
+      <div class="weIntro">
+        <h2>Team WE</h2>
+        <h3>成立</h3>
+        <p>TeamWE是一家中国电子竞技俱乐部，成立于2005年4月21日。旗下拥有英雄联盟分部、英魂之刃分部等。</p>
+        <h3>现役成员</h3>
+        <table summary="we members">
+          <caption>WE Members</caption>
+          <tbody>
+            <tr>
+              <th>TOP</th>
+              <th>MID</th>
+              <th>ADC</th>
+              <th>SUPPORT</th>
+              <th>JUNGLE</th>
+            </tr>
+            <tr>
+              <td>957</td>
+              <td>xiye</td>
+              <td>mystic</td>
+              <td>zero</td>
+              <td>condi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="investigation">
+        <form action="index.html" method="post">
+          <label class="note">你最喜欢的队伍  </label>
+          <label for="teamWe">WE</label>
+          <input type="radio" value="we" id="teamWe">
+          <label for="teamIg">IG</label>
+          <input type="radio" value="ig" id="teamIg">
+          <label for="teamC">切尔西</label>
+          <input type="radio" value="chelsea" id="teamC">
+          <br>
+          <label class="note">你最喜欢的选手  </label>
+          <select>
+            <option value="we">957</option>
+            <option value="we">xiye</option>
+            <option value="we">condi</option>
+            <option value="we">mystic</option>
+            <option value="we">ben</option>
+            <option value="ig">rookie</option>
+            <option value="ig">the shy</option>
+            <option value="ig">pdd</option>
+            <option value="chelsea">巴拉克</option>
+            <option value="chelsea">切尔西</option>
+          </select>
+        </form>
+      </div>
+      <div class="igIntro">
+        <h2>Invictus Gaming</h2>
+        <h3>成立</h3>
+        <p>IG（Invictus Gaming）电子竞技俱乐部成立于2011年，旗下拥有英雄联盟分部、DOTA2分部、CS:GO分部、守望先锋分部等。</p>
+        <h3>现状</h3>
+        <table summary="we members">
+          <caption>IG Members</caption>
+          <tbody>
+            <tr>
+              <th>TOP</th>
+              <th>MID</th>
+              <th>ADC</th>
+              <th>SUPPORT</th>
+              <th>JUNGLE</th>
+            </tr>
+            <tr>
+              <td>the shy</td>
+              <td>rookie</td>
+              <td>marge</td>
+              <td>megan</td>
+              <td>rio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="chelseaIntro">
+        <h2>Chelsea Football Club</h2>
+        <h3>成立</h3>
+        <p>切尔西足球俱乐部，简称切尔西，绰号蓝军。参加英格兰足球超级联赛，与尤文图斯、拜仁慕尼黑、阿贾克斯、曼联并列为欧洲大满贯球队。俱乐部成立于1905年3月14日 ，主场位于伦敦哈默史密斯·富勒姆区邻近泰晤士河的斯坦福桥球场。
+阿布收购切尔西后斥巨资引援，球队逐渐成为豪门。球队以稳如磐石的防守和铁血精神著称，也以过于防守的“摆大巴”战术而蜚声足坛，是足坛防守反击打法的代表球队之一。</p>
+        <h3>略略略</h3>
+        <p>Blue till I die.</p>
+      </div>
+    </div>
+  </body>
+</html>
