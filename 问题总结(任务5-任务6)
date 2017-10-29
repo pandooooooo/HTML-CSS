@@ -1,0 +1,14 @@
+任务6
+1. form中的textarea溢出 对cols和rows不要设置具体的长度,即以px为单位的那种
+可以设置一个数比如rows="3" cols="8" 表明这个textarea有三行八列
+或者设置行数rows="3" 然后通过css的width属性设置textarea的宽度
+    场景: 任务6表单中的textarea <textarea rows="50px" cols="80px">请输入您的个人描述</textarea>
+
+2. 尽量不要出现行内样式 尽量写在样式层叠表css中
+    场景: mission6 header中的img元素含有行内元素 
+
+问题总结__笔记.txt
+    关于提到的"除了最后一行别的都增加一列的操作" 可以用table的colspan属性解决
+
+总结:
+    小可爱进步很大！～任务5做的很不错~任务6也是一些细节上面的问题～
