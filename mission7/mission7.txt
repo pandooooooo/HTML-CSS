@@ -1,0 +1,35 @@
+﻿1、position方法三栏分割
+p会超出div
+word-wrap:break-word; 
+word-break:break-all; 
+
+父元素规定为relative 子元素absolute的移动参照父元素
+为了保持文档流下面div和子元素不重叠 要规定父元素高度 子元素相当于从文档流中删掉 接下来部分按照父元素的高度排列
+
+overflow：auto ———— 出现滑动界面
+
+"楷体","楷体_GB2312"; 
+
+选择属于其父元素的首个子元素的每个 <p> 元素，并为其设置样式：
+p:first-child
+{ 
+background-color:yellow;
+}
+n 可以是数字、关键词或公式。
+
+图片文字并列时，调整文字div的位置：设定margin-left{}
+
+span设定第一个蚊子和最后一个文字放大
+
+line-height ———————— 文字大小+行间距
+
+文字环绕图片
+
+字间距 letter-spacing
+
+table-cell
+
+问题：
+引号放大对齐
+红色块部分字消失
+左上角红色部分和下面横线的间隔
