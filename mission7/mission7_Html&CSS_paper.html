@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About WE</title>
+    <style type="text/css">
+    /* div{
+      border: 2px #000 solid;
+    } */
+    /* REVIEW: 整体居中 */
+    body{
+      height: 1386px;
+      width: 980px;
+      margin: auto;
+      background-color: grey;
+    }
+    /* REVIEW: 整体边框 */
+    .paper{
+      height: 1386px;
+      padding: 0 40px;
+      background-color: #fff;
+    }
+    /* REVIEW: header */
+      .name{
+        color: #fff;
+        font-size:12px;
+        font-family: SimHei;
+        background-color: #d45d5c;
+        display: inline-block;
+        height: 61px;
+        width: 110px;
+        display: table-cell;
+        vertical-align: bottom;
+      }
+      .date{
+        color: #d45d5c;
+        font-size:12px;
+        font-family: SimHei;
+        float: right;
+      }
+      /* REVIEW: 第二部分 图片加两边 图片文字并列*/
+      .briefIntro{
+        position: relative;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+      .briefIntro img{
+        float: left;
+      }
+      .colorLeft{
+        background-color:#EED5D2;
+        width:191px;
+        height: 301px;
+        opacity:0.5;
+        position: absolute;
+        left: 0px;
+      }
+      .colorRight{
+        background-color:#E3E3E3;
+        width:191px;
+        height: 301px;
+        opacity:0.5;
+        position: absolute;
+        left: 450px;
+      }
+      .word{
+        margin-left: 695px;
+      }
+      .word hr{
+        width: 203px;
+        height: 2px;
+        color: #cc8091;
+      }
+      .word h3{
+        font: 24px #000;
+        font-family:"Microsoft YaHei";
+        text-decoration: underline;
+      }
+      .word p{
+        font: 12px #676767;
+        font-family: "楷体","楷体_GB2312";
+        line-height: 22px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      .word span{
+        font-size: 100px;
+        color: #75b86b;
+        font-family:"Microsoft YaHei";
+        font-style: italic;
+        padding-top: 0px;
+        margin-top: 0px;
+      }
+      .word p:{
+        font: 55px #cc8091;
+        font-family:"Microsoft YaHei";
+      }
+      /* REVIEW: 三栏分割 */
+      .specificIntro{
+        position: relative;
+        width: 641px;
+        height: 230px;
+      }
+      .TOP,.ADC,.MID{
+        width: 200px;
+        /*p自动换行*/
+        word-wrap:break-word; 
+        word-break:break-all; 
+      }
+      .TOP{
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        font: 12px #767777 "simsong";
+      }
+      .ADC{
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        font: 12px #cd4a48 "Microsoft YaHei";
+      }
+      .MID{
+        position: absolute;
+        top: 10px;
+        margin-left: 221px;
+        margin-right: 220px;
+        font: 12px #231815 "Microsoft YaHei";
+        opacity: 0.7;
+      }
+      .TOP h3{
+        font: 16px "Microsoft YaHei";
+        color: #418c59;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      .MID h3{
+        font: 16px "Microsoft YaHei";
+        color: #418c59;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      .ADC h3{
+        font: 16px "Microsoft YaHei";
+        color: #cc7680;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      /* REVIEW: 第四部分 文字包围图片*/
+      .lower{
+        position: relative;
+        border-bottom: 2px solid #000;
+        padding-bottom: 700px;
+      }
+      .s7MSI{
+        width: 415px;
+        position: absolute;
+        left: 0;
+        overflow: hidden;
+      }
+      /* 具体字体等细节 */
+      .s7MSI h1 span{
+        font-size: 72px;
+        color: #f5e327;
+        font-family: "SimHei";
+        font-style: italic;
+      }
+      .s7MSI p span{
+        font-size: 70px;
+        color: #f5e327;
+        font-family: "SimHei";
+        font-style: italic;
+      }
+      .s7MSI h1{
+        font-size: 42px;
+        font-family: "SimHei";
+        color: #11456b;
+        line-height: 58px;
+        font-weight: bold;
+      }
+      .s7MSI h3{
+        font-size: 33px;
+        font-family: "SimHei";
+        color: #11456b;
+        font-weight: bold;
+        line-height: 33px;
+        border-bottom: 2px #000 solid;
+        padding-bottom: 10px;
+      }
+      .s7MSI p{
+        font-size: 12px;
+        color: #767777;
+        line-height: 28px;
+        padding-top: 0px;
+      }
+
+      .lowerRight{
+        position: absolute;
+        right: 0px;
+        width: 458px;
+      }
+      .wordAbove{
+        position: absolute;
+        right: 0;
+        top: 214px;
+        background-color: #000;
+        opacity: 0.4;
+        width: 458px;
+        height: 61px;
+      }
+      .wordAbove p{
+        border-left: 3px #72b16a solid;
+        margin-left: 3em;
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        color: #72b16a;
+        font-style: italic;
+        letter-spacing: 140%;
+      }
+      .wordAbove p span{
+        font-size: 25px;
+        color: #fff;
+      }
+      .note{
+        width: 459px;
+        height: 318px;
+        background-color: #FFDEAD;
+      }
+      .note ul{
+        padding-top: 20px;
+        list-style-type: square;
+        font-size: 16px;
+        color: #5a5b5b;
+        text-align: left;
+        line-height: 36px;
+      }
+      .note ul span{
+        font-size: 12px;
+      }
+      .note{
+        position: relative;
+      }
+      .xxx{
+        width: 260px;
+        height: 160px;
+        background-color: #d45d5c;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      .note p{
+        word-wrap:break-word; 
+        word-break:break-all; 
+        display: inline-block;
+        margin-left: 270px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #5a5b5b;
+        font-family: "SimHei";
+        font-style: italic;
+        line-height: 30px;
+        padding-top: 0px;
+      }
+      .note p span{
+        font-size: 72px;
+        color: #d45d5c;
+        display: table-cell;
+        vertical-align: bottom;
+      }
+      /* REVIEW: 红色部分文字 */
+      .xxx{
+        color: #fff;
+        font-size: 12px;
+        font-family: "SimHei";
+        line-height: 6px;
+        overflow: hidden;
+      }
+      .xxx span{
+        float: left;
+        font-size: 110px;
+        color: #fff;
+        margin-top: 75px;
+        margin-left: 15px;
+      }
+      .xxx hr{
+        height: 86px;
+        width: 2px;
+        color: #fff;
+        float: left;
+        margin-top: 35px;
+        margin-left: 3px;
+      }
+      .xxx p{
+        font-size: 21px;
+        font-family: "SimHei";
+        line-height: 24px;
+        color: #fff;
+        float: left;
+        margin-top: 35px;
+        margin-left: 9px;
+        border: 2px #000 solid;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="paper">
+      <header>
+        <p><span class="name">Team WE</span><span class="date">2017/11/1</span></p>
+        <hr>
+      </header>
+      <div class="briefIntro">
+        <div class="picColor">
+          <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1901494095,947500909&fm=27&gp=0.jpg" alt="TEAM WE" width="641px" height="301px">
+          <div class="colorLeft">
+          </div>
+          <div class="colorRight">
+          </div>
+        </div>
+        <div class="word">
+          <hr>
+          <h3>ABOUT TEAM WE</h3>
+          <p>ABOUT TEAM WE ABOUT TEAM WE ABOUT TEAM WE</p>
+          <span>WE</span>
+          <p style=" display:inline;font-size:55px;font-family:Microsoft YaHei;color:#cc8091">957</p>
+          xiye
+          <br>
+          carrycarrycarrycarrycarrycarrycarry
+        </div>
+      </div>
+      <div class="specificIntro">
+        <div class="TOP">
+          <h3>TOP</h3>
+          <p>957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957957</p>
+        </div>
+        <div class="MID">
+          <h3>MID</h3>
+          <p>yexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiyexiye</p>
+        </div>
+        <div class="ADC">
+          <h3>ADC</h3>
+          <p>mysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmysticmystic</p>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="s7MSI">
+          <h1><span>THE</span> MID-SEASON INVITATIONAL</h1>
+          <h3>英雄联盟总决赛</h3>
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509948307520&di=45ba04dce4b4ea095899422c2bd3aec7&imgtype=0&src=http%3A%2F%2Fcnews.chinadaily.com.cn%2Fimg%2Fattachement%2Fjpg%2Fsite1%2F20170329%2Fbc305bcee6d91a45af2a1b.jpg" align="right" hspace="5px" vspace="5px" alt="faker" width="50%" height="50%">
+          <p><span>许</span>多年后，faker的孩子指着家里的十座奖杯中放的最高的一座，问faker：爸爸，为什么这个奖杯放这么高呢？faker：这是你爸爸第一个亚军奖杯，很有意义的。 孩子问：是因为爸爸要铭记失败吗？ faker：里面装着你bang叔叔的骨灰。</p>
+
+          <p>打完比赛后，faker坐在位置上久久没有起来，教练想去安慰他，这时，faker突然坐了起来，带着泪眼跟教练说，教练我想打AD，教练心想，bang这瓜娃子，搞得faker都想换位置打了，然后安慰他说，没事，你想打那就打吧。然后faker站起身拿起凳子朝bang砸了过去。</p>
+        </div>
+        <div class="lowerRight">
+          <div class="pic">
+            <img src="http://ww1.sinaimg.cn/bmiddle/0064OhrBly1fl79vn89tbj30hs09z74u.jpg" alt="samsung" width="458px" height="275px">
+            <div class="wordAbove">
+              <p><span>&nbspSKT</span> Faker大魔王</p>
+            </div>
+          </div>
+          <div class="note">
+            <ul>
+              <li>Faker -------------------------------- <span>MID</span></li>
+              <li>Ambition ----------------------------- <span>JUNGLE</span></li>
+              <li>UZI ---------------------------------- <span>ADC</span></li>
+            </ul>
+            <div class="xxx">
+              <span>0</span>
+              <hr>
+              <p><span>RNG RNG WE WE WE</span></p>
+              <p>ig ig ig ig ig</p>
+            </div>
+            <p><span>"</span>lollollollollollollollollollollollollollollollollollollollollollollollollollol<span>"</span></p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
