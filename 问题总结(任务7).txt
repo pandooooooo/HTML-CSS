@@ -1,0 +1,20 @@
+1. mission7的css样式表中第94行 
+    .word p:{
+      font: 55px #cc8091;
+      font-family:"Microsoft YaHei";
+    }
+  这里p后面不应该有冒号':' 这个应该我们疏忽了～
+
+2. header 部分内容和设计稿不一致
+    TeamWE的彩色块以及右侧日期应该是在横线正上方
+    这里用border实现就比较好(我看我们的问题里也提了文字块与横线的间隔)
+    我写了一个可以的 在html中用<!--小胖子-->区分了出来 右右可以看一下～
+
+3. about team we那里 设计稿给出的文字样式是斜体 对应属性font-style
+
+4. font 属性中不能设置文字颜色 文字颜色应该通过color属性设置
+    对应场景: font: 12px #676767;
+
+5. class="word" 代码404行 与设计稿不一致
+    957与xiye carry 这部分可以用position来实现
+    我写了一个 在代码中注释了出来
