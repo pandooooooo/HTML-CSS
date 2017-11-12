@@ -18,3 +18,17 @@
 5. class="word" 代码404行 与设计稿不一致
     957与xiye carry 这部分可以用position来实现
     我写了一个 在代码中注释了出来
+
+6. class="lower" 为什么要padding-bottom: 700px
+
+7. <h3>英雄联盟总决赛</h3> 占据的高度过大 可以margin:0覆盖h3本来的样式
+    如果这样"许"字会上溢 则可以为许多年后的那个p元素设置padding-top的css样式
+
+8. img元素中不要使用hspace和vpsace属性 原因是在html5中已经被废弃 用css代替
+    比如 margin: 5px 可以代替 hspace="5px" vspace="5px"
+
+9. 许多年后的效果与设计稿不一致 应该是首字下沉 可以考虑float
+
+10. 段落首字缩进 text-indent
+
+11. 引号放大对齐 可以通过为两个引号分别设置float:left float:right 然后调整margin

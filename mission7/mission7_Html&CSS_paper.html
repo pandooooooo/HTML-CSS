@@ -3,381 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>About WE</title>
-    <style type="text/css">
-    /* div{
-      border: 2px #000 solid;
-    } */
-    /* REVIEW: 整体居中 */
-    body{
-      height: 1386px;
-      width: 980px;
-      margin: auto;
-      background-color: grey;
-    }
-    /* REVIEW: 整体边框 */
-    .paper{
-      height: 1386px;
-      padding: 0 40px;
-      background-color: #fff;
-    }
-    /* REVIEW: header */
-      .name{
-        color: #fff;
-        font-size:12px;
-        font-family: SimHei;
-        background-color: #d45d5c;
-        display: inline-block;
-        height: 61px;
-        width: 110px;
-        display: table-cell;
-        vertical-align: bottom;
-      }
-      /*小胖子 header*/
-      .header {
-        height: 60px;
-        position: relative;
-        border-bottom: 2px solid #918e8b;
-      }
-      .header__name {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 20px;
-        line-height: 20px;
-        background: #d45d5c;
-        color: #fff;
-        padding: 0 10px; /* top&bottom:0 left&right:10px */
-        padding-top: 40px;
-      }
-      .header__date {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: #d45d5c;
-      }
-      /*小胖子 header*/
-      .date{
-        color: #d45d5c;
-        font-size:12px;
-        font-family: SimHei;
-        float: right;
-      }
-      /* REVIEW: 第二部分 图片加两边 图片文字并列*/
-      .briefIntro{
-        position: relative;
-        overflow: hidden;
-        margin-top: 20px;
-      }
-      .briefIntro img{
-        float: left;
-      }
-      .colorLeft{
-        background-color:#EED5D2;
-        width:191px;
-        height: 301px;
-        opacity:0.5;
-        position: absolute;
-        left: 0px;
-      }
-      .colorRight{
-        background-color:#E3E3E3;
-        width:191px;
-        height: 301px;
-        opacity:0.5;
-        position: absolute;
-        left: 450px;
-      }
-      .word{
-        margin-left: 695px;
-      }
-      .word hr{
-        width: 203px;
-        height: 2px;
-        color: #cc8091;
-      }
-      .word h3{
-        font: 24px #000;
-        font-family:"Microsoft YaHei";
-        text-decoration: underline;
-      }
-      .word p{
-        font: 12px #676767;
-        font-family: "楷体","楷体_GB2312";
-        line-height: 22px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-      }
-      .word span{
-        font-size: 100px;
-        color: #75b86b;
-        font-family:"Microsoft YaHei";
-        font-style: italic;
-        padding-top: 0px;
-        margin-top: 0px;
-      }
-      .word p:{
-        font: 55px #cc8091;
-        font-family:"Microsoft YaHei";
-      }
-      /* 小胖子intro */
-      .xpzIntro {
-        position: relative;
-        height: 301px;
-        width: 100%;
-      }
-      .xpzIntro__logo {
-        height: 301px;
-        width: 641px;
-        position: absolute;
-        left: 0;
-        background: url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1901494095,947500909&fm=27&gp=0.jpg') no-repeat center center;
-      }
-      .xpzIntro__word {
-        position: absolute;
-        right: 0;
-        height: 301px;
-        width: calc(100% - 641px);
-      }
-      .word__957xiye {
-        position: relative;
-        width: 100%;
-        height: 55px;
-        color: #cc8091;
-      }
-      .word__957 {
-        position: absolute;
-        left: 0;
-        font-size: 55px;
-        height: 55px;
-        line-height: 55px;
-      }
-      .word__xiyecarry {
-        position: absolute;
-        left: 100px;
-        height: 55px;
-      }
-      .word__xiyecarry .word__xiye {
-        position: absolute;
-        bottom: 20px;
-        font-size: 21px;
-        height: 21px;
-        line-height: 21px;
-      }
-      .word__xiyecarry .word__carry {
-        position: absolute;
-        bottom: 8px;
-        font-size: 12px;
-        height: 12px;
-        line-height: 12px;
-      }
-      /* 小胖子intro */
-
-      /* REVIEW: 三栏分割 */
-      .specificIntro{
-        position: relative;
-        width: 641px;
-        height: 230px;
-      }
-      .TOP,.ADC,.MID{
-        width: 200px;
-        /*p自动换行*/
-        word-wrap:break-word; 
-        word-break:break-all; 
-      }
-      .TOP{
-        position: absolute;
-        left: 0px;
-        top: 10px;
-        font: 12px #767777 "simsong";
-      }
-      .ADC{
-        position: absolute;
-        right: 0px;
-        top: 10px;
-        font: 12px #cd4a48 "Microsoft YaHei";
-      }
-      .MID{
-        position: absolute;
-        top: 10px;
-        margin-left: 221px;
-        margin-right: 220px;
-        font: 12px #231815 "Microsoft YaHei";
-        opacity: 0.7;
-      }
-      .TOP h3{
-        font: 16px "Microsoft YaHei";
-        color: #418c59;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-      .MID h3{
-        font: 16px "Microsoft YaHei";
-        color: #418c59;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-      .ADC h3{
-        font: 16px "Microsoft YaHei";
-        color: #cc7680;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-      /* REVIEW: 第四部分 文字包围图片*/
-      .lower{
-        position: relative;
-        border-bottom: 2px solid #000;
-        padding-bottom: 700px;
-      }
-      .s7MSI{
-        width: 415px;
-        position: absolute;
-        left: 0;
-        overflow: hidden;
-      }
-      /* 具体字体等细节 */
-      .s7MSI h1 span{
-        font-size: 72px;
-        color: #f5e327;
-        font-family: "SimHei";
-        font-style: italic;
-      }
-      .s7MSI p span{
-        font-size: 70px;
-        color: #f5e327;
-        font-family: "SimHei";
-        font-style: italic;
-      }
-      .s7MSI h1{
-        font-size: 42px;
-        font-family: "SimHei";
-        color: #11456b;
-        line-height: 58px;
-        font-weight: bold;
-      }
-      .s7MSI h3{
-        font-size: 33px;
-        font-family: "SimHei";
-        color: #11456b;
-        font-weight: bold;
-        line-height: 33px;
-        border-bottom: 2px #000 solid;
-        padding-bottom: 10px;
-      }
-      .s7MSI p{
-        font-size: 12px;
-        color: #767777;
-        line-height: 28px;
-        padding-top: 0px;
-      }
-
-      .lowerRight{
-        position: absolute;
-        right: 0px;
-        width: 458px;
-      }
-      .wordAbove{
-        position: absolute;
-        right: 0;
-        top: 214px;
-        background-color: #000;
-        opacity: 0.4;
-        width: 458px;
-        height: 61px;
-      }
-      .wordAbove p{
-        border-left: 3px #72b16a solid;
-        margin-left: 3em;
-        font-size: 16px;
-        font-family: "Microsoft YaHei";
-        color: #72b16a;
-        font-style: italic;
-        letter-spacing: 140%;
-      }
-      .wordAbove p span{
-        font-size: 25px;
-        color: #fff;
-      }
-      .note{
-        width: 459px;
-        height: 318px;
-        background-color: #FFDEAD;
-      }
-      .note ul{
-        padding-top: 20px;
-        list-style-type: square;
-        font-size: 16px;
-        color: #5a5b5b;
-        text-align: left;
-        line-height: 36px;
-      }
-      .note ul span{
-        font-size: 12px;
-      }
-      .note{
-        position: relative;
-      }
-      .xxx{
-        width: 260px;
-        height: 160px;
-        background-color: #d45d5c;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-      }
-      .note p{
-        word-wrap:break-word; 
-        word-break:break-all; 
-        display: inline-block;
-        margin-left: 270px;
-        margin-right: 10px;
-        font-size: 14px;
-        color: #5a5b5b;
-        font-family: "SimHei";
-        font-style: italic;
-        line-height: 30px;
-        padding-top: 0px;
-      }
-      .note p span{
-        font-size: 72px;
-        color: #d45d5c;
-        display: table-cell;
-        vertical-align: bottom;
-      }
-      /* REVIEW: 红色部分文字 */
-      .xxx{
-        color: #fff;
-        font-size: 12px;
-        font-family: "SimHei";
-        line-height: 6px;
-        overflow: hidden;
-      }
-      .xxx span{
-        float: left;
-        font-size: 110px;
-        color: #fff;
-        margin-top: 75px;
-        margin-left: 15px;
-      }
-      .xxx hr{
-        height: 86px;
-        width: 2px;
-        color: #fff;
-        float: left;
-        margin-top: 35px;
-        margin-left: 3px;
-      }
-      .xxx p{
-        font-size: 21px;
-        font-family: "SimHei";
-        line-height: 24px;
-        color: #fff;
-        float: left;
-        margin-top: 35px;
-        margin-left: 9px;
-        border: 2px #000 solid;
-      }
-
-    </style>
+    <link rel="stylesheet" href="mission7.css">
   </head>
   <body>
     <div class="paper">
@@ -478,8 +104,40 @@
               <p><span>RNG RNG WE WE WE</span></p>
               <p>ig ig ig ig ig</p>
             </div>
-            <p><span>"</span>lollollollollollollollollollollollollollollollollollollollollollollollollollol<span>"</span></p>
+            <p>
+              <span>"</span>
+              lollollollollollollollollollollollollollollollollollollollollollollollollollol
+              <span>"</span>
+            </p>
           </div>
+
+          <!--小胖子note>
+          <div class="xpznote">
+            <ul>
+              <li>Faker -------------------------------- <span>MID</span></li>
+              <li>Ambition ----------------------------- <span>JUNGLE</span></li>
+              <li>UZI ---------------------------------- <span>ADC</span></li>
+            </ul>
+
+            <div class="xpzxxx">
+              <div class="xpzxxx__zero">
+                <span>0</span>
+              </div>
+              <div class="xpzxxx__team">
+                <p class="xpzxxx__team-we">WE WE</p>
+                <p class="xpzxxx__team-we">WE WE WE</p>
+                <p class="xpzxxx__team-ig">ig ig ig ig ig</p>
+              </div>
+            </div>
+
+            <div id="quotes">
+              <p>
+                <span class="quote" id="left-quote">“</span>world hello world <br> hello world hello world <br> hello world hello world <br> hello world hello world <br> hello world hello world <br> hello world<span class="quote" id="right-quote">”</span>
+              </p>
+            </div>
+          </div>
+          <小胖子note-->
+
         </div>
     </div>
     </div>
