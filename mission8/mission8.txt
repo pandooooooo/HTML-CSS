@@ -1,0 +1,27 @@
+1、span和p
+
+z-index
+背景图片 定位absolute
+
+div内直接输入文字 
+display:block；margin：xxxem； 更改位置
+两段文字 margin指的是和上一个span的距离
+
+display
+
+分栏时 以margin-left定位
+
+em
+
+overflow：hidden 不用规定height
+
+
+a窗口大小用padding 调整
+
+图像占满整个div？
+
+position变化时 行内元素水平居中（img）：display：block；margin：auto；
+
+p元素水平居中：text-align:center（要block）
+
+hr的颜色 要通过border？？
