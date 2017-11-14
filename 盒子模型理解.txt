@@ -1,0 +1,68 @@
+基本介绍
+1、CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。
+	*盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。
+2、weight = margin-left+border-left+padding-left+content+padding-right+border-right+margin-right
+	height = margin-top+border-top+padding-top+content+padding-bottom+border-bottom+margin-bottom
+	*margin合并
+	块级元素的垂直相邻外边距会合并。
+	行内元素实际上不占上下外边距，行内元素的的左右外边距不会合并。
+	浮动元素的外边距也不会合并。允许指定负的外边距值，不过使用时要小心。
+
+分块介绍
+1、content
+	*元素真实内容的区域。
+	*box-sizing
+		用于更改用于计算元素宽度和高度的默认的 CSS 盒子模型。
+		在CSS中，你设置一个元素的 width 与 height 只会应用到这个元素的内容区。
+		如果这个元素有任何的 border 或 padding ，绘制到屏幕上时的盒子宽度和高度会加上设置的边框和内边距值。
+
+		> content-box  是默认值。
+		设置一个元素的宽为100px，那么这个元素的内容区会有100px宽，并且任何边框和内边距的宽度都会被增加到最后绘制出来的元素宽度中。
+		width = 内容的宽度，height = 内容的高度。宽度和高度都不包含内容的边框（border）和内边距（padding）。
+		> border-box 
+		设置的边框和内边距的值是包含在width内的。
+		将一个元素的width设为100px,那么这100px会包含其它的border和padding，内容区的实际宽度会是width减去border + padding的计算值。
+		width = border + padding + 内容的  width，
+		height = border + padding + 内容的 height。
+	*width
+		> min-width
+		固有的最小宽度。
+		可以阻止 width 属性的应用值小于 min-width 的值。
+		min-width 的值会同时覆盖 max-width 和 width。
+		> max-width
+		固有的首选宽度。
+		给元素设置最大宽度值。
+		定义了max-width的元素会在达到max-width值之后避免进一步按照width属性设置变大定义了max-width的元素会在达到max-width值之后避免进一步按照width属性设置变大。
+		
+		max-width 属性覆盖 width。 min-width设置会覆盖 max-width。
+		
+		width: 300px        /* <length> values */
+		width: 25em
+		width: 75%          /* <percentage> values */
+
+		width: border-box   /* Keyword values */
+		width: content-box
+		width: max-content
+		width: min-content
+	*height
+		> min-height
+		> max-height
+		
+		height: 120px    /* <length> values */
+		height: 10em
+		height: 75%      /* <percentage> values */
+2、line-height
+	*设置行间的距离（行高）。
+	应用到一个块级元素时，它定义了该元素中基线之间的最小距离而不是最大距离。
+	*line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。
+	
+排版思想
+首先在整体上进行<div>标记的分块，然后对各个块进行CSS定位，最后再在各个块中添加相应的内容。
+
+	
+其他
+1、div和span
+	大部分div层都可以使用span标记代替
+	Div是一个块级元素，其包含的元素会自动换行；span标记是一个行内标记，其前后不会发生换行。
+	Div标记可以包含span标记元素，但span标记一般不包含div标记。
+	在网页设计中，对于较大的块可以使用div完成，而对于具有独特样式的单独HTML元素，可以使用span标记完成。
