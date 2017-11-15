@@ -1,0 +1,47 @@
+响应式网格（栅格化）布局
+*ems or rems for defining most sizes, pxs are used for grid breakpoints and container widths.
+
+@media screen and (min-width: 480px) {  
+      
+} 
+
+1、容器包裹问题
+	图片比包含它的元素还高，是浮动的，会溢出到了容器外面。
+	*overflow：hidden
+	*overflow：auto
+	如果内容被修剪，则浏览器会（按需）显示滚动条以便查看其余的内容。
+	撑开容器至正好显示所有内容时，如果有滚动条，则滚动条会覆盖在内容上方，导致内容宽度再次被缩小，然后出现省略号。由此推测渲染顺序：
+	自适应宽度 → 根据高度显示滚动条 → 重新计算内部元素宽度
+	*overflow：scroll
+	如果内容被修剪，则浏览器会（始终）显示滚动条以便查看其余的内容。
+	内容自动撑开容器的宽度不包括滚动条，相当于滚动条是一个和内容并列显示的组件。
+	*clearfix
+	.clearfix {
+	overflow: auto;
+	zoom: 1;	/*支持IE6*/
+	}
+	容器被撑开至图片大小。
+	*clearfix ？？？？？？？？
+	clearfix:after{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	}
+	？？？？？？？？？？？？？？
+	清楚浮动？？？？？？？？？
+2、after选择器
+	*cSS伪元素::after用来创建一个伪元素，做为已选中元素的最后一个子元素。
+	通常会配合content属性来为该元素添加装饰内容。这个虚拟元素默认是行内元素。
+	*可以给 content 属性里的文字和图片的加上样式。
+	
+3、无响应的网站
+	这将设置屏幕按1：1的尺寸显示，在 iPhone 和其他智能手机的浏览器提供网站全视图浏览，并禁止用户缩放页面。
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+4、calc() 函数用于动态计算长度值。
+	需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+	任何长度值都可以使用calc()函数进行计算；
+	calc()函数支持 "+", "-", "*", "/" 运算；
+	calc()函数使用标准的数学运算优先级规则；
