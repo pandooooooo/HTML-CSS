@@ -1,0 +1,59 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.container div{
+    width: 150px;
+    padding: 20px;
+}
+.item1{
+  height: 120px;
+  margin: 10px;
+  border: 1px #f00 solid;
+}
+.item2{
+  height: 100px;
+  margin: 10px;
+  border: 1px #f00 solid;
+}
+.item3{
+  height: 40px;
+  margin: 10px;
+  border: 1px #f00 solid;
+}
+.item4{
+  height: 200px;
+  margin: 10px;
+  border: 1px #0f0 solid;
+}
+
+@media screen and (max-width:640px) {
+  .container{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .item1{
+    order: 1;
+  }
+  .item2{
+    order: 1;
+  }
+  .item3{
+    order: 1;
+
+  }
+  .item4{
+    order: 0;
+  }
+}
