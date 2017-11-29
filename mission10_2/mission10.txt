@@ -1,0 +1,41 @@
+Flex 布局
+	*container
+		> display: flex | inline-flex
+		> flex-direction: row | row-reverse |column | column-reverse
+		  规定主轴方向
+		> flex-wrap: nowrap | wrap | wrap-reverse
+		  定义伸缩容器里是单行还是多行显示，侧轴决定新行对方方向
+		> flex-flow: <'flex-direction'> || <'flex-wrap'>
+		  默认值：flex-flow: row nowrap;
+		> justify-content: flex-start | flex-end | center | space-between | space-around;
+		  沿主轴的对齐方式
+		> align-content：flex-start | flex-end | center | space-between | space-around | stretch
+		  沿侧轴的对齐方式
+		> align-items: flex-start | flex-end | center | baseline | stretch
+		!! flex-flow 是每个item在主轴方向如何排列（不改变item的高度）， align-items 是在主轴的高度上每个item的排列 （可以改变item的高度）。
+	*item
+		> order: <integer>
+		  默认为0，数值越小排序越靠前。
+		> align-self :auto | flex-start |flex-end | center | baseline | stretch;
+		  单独规定，覆盖默认对齐方式。
+		> flex-grow: <number>;
+		  默认为0。
+		  如果所有伸缩项目的“flex-grow”设置了“1”，那么每个伸缩项目将设置为一个大小相等的剩余空间。
+		  如果你给其中一个伸缩项目设置了“flex-grow”值为“2”，那么这个伸缩项目所占的剩余空间是其他伸缩项目所占剩余空间的两倍。
+	    > flex-shrink: <number>;
+		  默认为1。
+		  定义伸缩项目收缩的能力。
+		  负值同样生效。
+		> flex-basis: <length> | auto; ？？？？？
+		  伸缩的基准值，剩余的空间按比率进行伸缩。
+		  如果设置为“0”，不考虑剩余空白空间。
+		  如果设置为自动，则按照flex-grow值分配剩余空白空间。
+		> flex: none | [<\flex-grow'> <'flex-shrink'>? || <'flex-basis'>]
+		
+	！！container 和 item 的flex使用
+
+@media
+	*max-width：定义输出设备中的页面最大可见区域宽度
+	            [屏幕宽度小于max-width时的设定]
+		> @media screen (and max-width：640px){
+		  }
