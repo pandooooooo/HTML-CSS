@@ -1,0 +1,100 @@
+.repeat{
+  width: 100%;
+  height: 800px;
+  margin: 50px;
+  background-image: url(https://wx1.sinaimg.cn/mw690/ba2023fely1fm0aap97tlj20k00enzky.jpg);
+  background-color: #f0f0f0;
+}
+.stretch{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  background-image: url(https://wx1.sinaimg.cn/mw690/ba2023fely1fm0aap97tlj20k00enzky.jpg);
+  background-color: #f0f0f0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type=radio] {
+  display: inline-block;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #000;
+        overflow: hidden;
+        vertical-align: middle;
+        text-align: center;
+        -webkit-appearance: none;
+        font: normal normal normal 14px/1 FontAwesome;
+        outline: 0;
+        background: 0 0;
+}
+
+input[type=radio]:checked:after {
+        content: '\f00c';
+        font-size: 15px;
+        text-align: center;
+        line-height: 17px;
+        color: #000;
+    }
+
+.selectTest{
+  margin-top: 50px;
+}
+select{
+  display: inline-block;
+  -webkit-appearance: none;
+  font-family: "Microsoft YaHei";
+  font-size: 17px;
+  padding: 2px 30px;
+  text-align: center;
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  background-color: #cd2626;
+  color: #fff;
+  padding-right: 14px;
+}
+select :hover{
+  background-color: #cd2626;
+}
+
+/*按钮样式*/
+.downbtn{
+  padding: 10px 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 17px;
+  background-color: #cd2626;
+  border: 2px solid #f0f0f0;
+  color: #fff;
+}
+/*定义下拉内容*/
+.dropdown{
+  margin-top: 60px;
+  display: inline-block;
+  position: relative;
+}
+/*下拉内容默认隐藏*/
+.downContent{
+  position: absolute;
+  display: none;
+
+}
+/*下拉菜单链接*/
+.downContent a{
+  text-decoration: none;
+  padding: 10px 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 17px;
+  background-color: #ccc;
+  color: #fff;
+  display: block;
+}
+.downContent a:hover{
+  background-color: #ededed;
+}
+/*鼠标移上去显示下拉内容*/
+.dropdown:hover .downbtn{
+  background-color: red;
+}
+.dropdown:hover .downContent{
+  display: block;
+}

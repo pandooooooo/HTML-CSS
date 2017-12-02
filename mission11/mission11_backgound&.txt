@@ -1,0 +1,93 @@
+*background-image: url(/i/eg_bg_04.gif);
+	> 为元素设定背景图像。
+	> 占据元素的全部尺寸，包括边框和内边距，不包括外边距。
+	> 默认地，背景图像位于元素的左上角，并在水平和垂直方向上重复。
+	> 设置一种可用的背景颜色，这样的话，假如背景图像不可用，页面也可获得良好的视觉效果。
+*background-repeat: repeat | repeat-x | repeat-y | no-repeat | inherit;
+	> 是否及如何重复背景图像。
+	>背景图像在水平和垂直方向上重复。
+*background-position
+	> 设置背景原图像（由 background-image 定义）的位置，背景图像如果要重复，将从这一点开始。
+*background-attachment
+	> 背景图片是固定还是滚动
+*background-size: length | percentage | cover | contain;
+	> 背景图片大小。
+	
+*appearance: normal | icon | window | button | menu | field;
+	> 使元素看上去像标准的用户界面元素。
+	> 所有主流浏览器都不支持。使用“appearances”时，需要加上各浏览器厂前缀。
+	> safari 和 chrome 支持 -webkit-appearance 作为替代
+*-webkit-appearance
+	> 
+	
+	input[type=radio]{
+	-webkit-appearance: ;
+	}
+	
+	单选框注意：
+	1 边框样式
+	2 选中后的居中
+	
+	
+*下拉框的实现
+	> 主体：button
+	> 下拉内容：a
+	<style>
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+<div class="dropdown">
+  <button class="dropbtn">下拉菜单</button>
+  <div class="dropdown-content">
+    <a href="#">菜鸟教程 1</a>
+    <a href="#">菜鸟教程 2</a>
+    <a href="#">菜鸟教程 3</a>
+  </div>
+</div>
+	
+	
+* radio单选框 name相同才为单选
