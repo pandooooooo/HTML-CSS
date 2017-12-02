@@ -1,0 +1,558 @@
+/*div{
+      border: 2px #000 solid;
+    }*/
+    /*Head*/
+    .head{
+      width: 100%;
+      height: 4em;
+      background-color: #fff;
+    }
+    .head img{
+      float: left;
+      margin-left:4em;
+    }
+    .head p{
+      float: left;
+      margin-left: 1em;
+      font-size: 1em;
+      font-family: "Microsoft YaHei";
+      color: grey;
+    }
+    .head ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      margin-top: 1em;
+      margin-right: 2em;
+    }
+    .head li{
+      display: inline;
+    }
+    .head a:link,a:visited{
+      text-align: center;
+      padding:1em 2em;
+      color: grey;
+      text-decoration: none;
+    }
+    .head a:hover,a:active{
+      color: red;
+      border-bottom: 0.2em solid red;
+    }
+  /*Pic&Word*/
+    .PicWord{
+      position: relative;
+      margin-top: 0px;
+      padding-top: 0px;
+      color: #fff;
+      padding-bottom: 15em;
+      overflow: hidden;
+    }
+    .PicWord img{
+      position: absolute;
+      z-index: -1;
+    }
+    .slogan{
+      display: block;
+      font-size: 4em;
+      font-family: "Microsoft YaHei";
+      color: #fff;
+      margin-left: 3em;
+      margin-top: 5em;
+      font-weight: bold;
+    }
+    .intro{
+      display: block;
+      width: 20em;
+      font-size: 1.5em;
+      font-family: "SimHei";
+      color: #fff;
+      margin-left: 8em;
+      margin-top: 1em;
+      word-wrap:break-word; 
+      word-break:break-all; 
+    }
+    .PicWord a{
+      font-family: "SimHei";
+      font-size: 2em;
+    }
+    .PicWord a:link,.PicWord a:visited{
+      display: inline-block;
+      text-align: center;
+      padding:0.5em 2em;
+      color: #fff;
+      background-color: #CD2626;
+      text-decoration: none;
+      margin-left: 6em;
+      margin-top: 1.7em;
+    }
+    .PicWord a:hover,.PicWord a:active{
+      background-color: grey;
+    }
+  /*四栏分割*/
+    /*.layout div{
+      border: 2px #000 solid;
+    } */
+    .layout{
+      position: relative;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      height: 12em;
+    }
+    .layout p{
+      display: inline-block;
+      text-align: center;
+      word-wrap:break-word; 
+      word-break:break-all; 
+      font-size: 1.5em;
+      font-family: "SimHei";
+    }
+    .left p,.midleft p,.midright p{
+      border-right: 2px solid grey;
+    }
+    .left{
+      position: absolute;
+      left: 0px;
+      width: 22%;
+      overflow: hidden;
+      margin-left: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .right{
+      position: absolute;
+      right: 0px;
+      width: 22%;
+      overflow: hidden;
+      margin-right: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .midleft{
+      position: absolute;
+      margin-left: 25.5%;
+      width: 22%;
+      overflow: hidden;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .midright{
+      position: absolute;
+      margin-left: 50%;
+      width: 22%;
+      overflow: hidden;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .left img,.right img,.midleft img,.midright img{
+      padding: 0px;
+      display: block;
+      margin: auto;
+    }
+    /*division*/
+    .division{
+      background-color: #EDEDED;
+      width: 100%;
+      border-bottom: 2px solid grey;
+    }
+    .division img{
+      display: block;
+      margin: auto;
+      padding-top: 1em;
+    }
+    .division p{
+      font-family: "Microsoft YaHei";
+      font-size: 3em;
+      color: grey;
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    /*表单交互 info*/
+    .info{
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 4em;
+    }
+    .info img{
+      position: absolute;
+      z-index: -1;
+    }
+    .info h3{
+      margin: auto;
+      color: #fff;
+      font-family: "Microsoft YaHei";
+      font-size: 2em;
+      padding-top: 1em;
+      text-align: center;
+    }
+    .info hr{
+      size:5em;
+      width: 5em;
+      color: #FFF;
+    }
+    .info p{
+      width: 100%;
+      margin: auto;
+      color: #fff;
+      font-family: "Microsoft YaHei";
+      font-size: 1em;
+      padding-top: 0.5em;
+      padding-bottom: 1em;
+      text-align: center;
+    }
+    .info form{
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      padding: 2em;
+      text-align: center;
+    }
+    .info select{
+      width: 12%;
+      margin-right: 1%;
+      height: 1.6em;
+      color: grey;
+      font-size: 1.2em;
+      background-color: #EDEDED;
+    }
+    .info input{
+      width: 12%;
+      margin-right: 3%;
+      height: 1.6em;
+      color: #fff;
+      background-color: #CD2626;
+      font-size: 1.2em;
+      border: 0px;
+    }
+    /*俱乐部信息和图片*/
+    /*.teamPic div{
+      border: 2px #000 solid;
+    }*/
+    .teamPic{
+      position: relative;
+      background-color: #EDEDED;
+      width: 100%;
+      height: 30em;
+      padding-top: 6em;
+    }
+    .name{
+      font-size: 1.5em;
+      color: #000;
+      font-family: "Microsoft YaHei";
+      text-align: center;
+      padding-top: 1em;
+    }
+    .fullName{
+      font-size: 1em;
+      color: #000;
+      font-family: "Microsoft YaHei";
+      text-align: center;
+    }
+    .nameSpe{
+      font-size: 2em;
+      font-weight: bold;
+      color: #000;
+      font-family: "Microsoft YaHei";
+      text-align: center;
+    }
+    .fullNameSpe{
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000;
+      font-family: "Microsoft YaHei";
+      padding-bottom: 1em;
+      text-align: center;
+    }
+    .RNG{
+      position: absolute;
+      left: 5.5%;
+      width: 20%;
+    }
+    .SKT{
+      position: absolute;
+      width: 20%;
+      margin-left: 28.5%;
+    }
+    .WE{
+      position: absolute;
+      width: 20%;
+      margin-left: 51.5%;
+    }
+    .IG{
+      position: absolute;
+      right: 5.5%;
+      width: 20%;
+    }
+    .teamPic img{
+      text-align: center;
+      border: 0.5em solid #7A7A7A;
+    }
+    /*二栏分割*/
+
+    .layoutTwo{
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 35em;
+    }
+    .layouPic{
+      float: left;
+      width: 65%;
+    }
+    .layoutWord{
+      float: right;
+      width: 31.5%;
+      padding: 0 1.3em;
+      font-family: "Microsoft YaHei";
+      font-size: 1em;
+      line-height: 1.5em;
+      color: grey;
+    }
+    .layouPic img{
+      position: absolute;
+      z-index: -1;
+      overflow: hidden;
+      height: 35em;
+    }
+    .layouPic span{
+      color: #fff;
+      font-family: "Microsoft YaHei";
+      font-size: 1.5em;
+      line-height: 3em;
+      display: block;
+      text-align: center;
+    }
+    .layouPic h2{
+      color: #fff;
+      font-family: "Microsoft YaHei";
+      font-size: 4em;
+      text-align: center;
+      line-height: 0em;
+    }
+    .layouPic h3{
+      color: #fff;
+      font-family: "Microsoft YaHei";
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 3em;
+    }
+    .layoutWord h3{
+      padding-top: 2em;
+      color: #000;
+      font-family: "Microsoft YaHei";
+      font-size: 2em;
+      text-align: center;
+    }
+    .layoutWord h3 span{
+      color: #CD2626;
+      font-family: "Microsoft YaHei";
+      font-size: 1.5em;
+      display: block;
+      text-align: center;
+      margin-top: 1em;
+    }
+    .layoutWord p{
+      color: grey;
+      font-family: "Microsoft YaHei";
+      font-size: 1.3em;
+      word-wrap:break-word; 
+      word-break:break-all; 
+    }
+    .layoutWord a{
+      color: #CD2626;
+      border: 0.2em solid #CD2626;
+      text-align: center;
+      font-family: "Microsoft YaHei";
+      font-size: 1.5em;
+      text-decoration: none;
+      padding:0 2em;
+      display: block;
+      width: 4em;
+      margin: auto;
+
+    }
+    /*
+    .triangle{
+      position: absolute;
+      top: 50%;
+      weight: 0;
+      height: 0;
+      border-top: 2em solid transparent;
+      border-bottom: 2em solid transparent;
+      border-right: 1em solid #fff;
+    }
+    */
+    /*红白图*/
+    .layoutThree{
+      overflow: hidden;
+    }
+    .layoutThree span{
+      margin-top: 5em;
+      display: block;
+      text-align: center;
+      font-family: "Microsoft YaHei";
+      font-size: 1.2em;
+    }
+    .threeLeft hr{
+      color: #fff;
+      width: 2em;
+      margin-top: 0.2em;
+    }
+    .threeMid hr{
+      color: #000;
+      width: 2em;
+      margin-top: 0.2em;
+    }
+    .layoutThree a{
+      color: #FFF;
+      border: 0.1em solid #FFF;
+      background-color: #CD2626;
+      width: 7em;
+      display: inline-block;
+      margin-left: 10.5em;
+      text-align: center;
+      font-family: "Microsoft YaHei";
+      font-size: 1.2em;
+      text-decoration: none;
+      padding:0.3em 2em;
+      margin-top: 0.5em;
+    }
+    .threeLeft{
+      width: 32.5%;
+      height: 25em;
+      float: left;
+      background-color: #CD2626;
+      color: #fff;
+    }
+    .threeRight{
+      width: 35%;
+      float: right;
+      height: 25em;
+      overflow: hidden;
+    }
+    .threeMid{
+      color: #000;
+      height: 25em;
+    }
+    /*表格题目*/
+    .introSub{
+      color: grey;
+      font-family: "Microsoft YaHei";
+      font-size: 1.2em;
+    }
+    .introSub h3{
+      color: #000;
+      font-family: "Microsoft YaHei";
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .introSub hr{
+      color: #CD2626;
+      size: 1em;
+      width: 2em;
+      border: 1px red solid;
+    }
+    .introSub p{
+      text-align: center;
+      word-wrap:break-word; 
+      word-break:break-all; 
+    }
+    /*表格整体*/
+    .infoMain{
+      width: 100%;
+      height: 33em;
+    }
+    /*表格说明*/
+    .infoLeft{
+      float: left;
+      width: 35%;
+      margin-left: 8%;
+      padding: 2em 2em 3em 5em;
+      word-wrap:break-word; 
+      word-break:break-all; 
+    }
+    .title{
+      font-size: 1.5em;
+      font-family: "SimHei";
+      font-weight: bold;
+      color: grey;
+    }
+    .infoLeft p{
+      color: #BDBDBD;
+      font-family: "Microsoft YaHei";
+      font-size: 1.2em;
+    }
+    /*提交表格*/
+    .formSub{
+      float: right;
+      width: 40%;
+      padding: 2em 5em 3em 3em;
+    }
+    .forms{
+      line-height: 1em;
+    }
+    .userLeft{
+      width: 36%;
+      padding: 1em 1em 1.5em;
+      font-size: 0.9em;
+      font-family: "SimHei";
+      background-color: #EDEDED;
+      margin-bottom: 1em;
+      border: 0px;
+    }
+    .userRight{
+      width: 36%;
+      font-size: 0.9em;
+      font-family: "SimHei";
+      padding: 1em 1em 1.5em;
+      background-color: #EDEDED;
+      margin-bottom: 1em;
+      border: 0px;
+    }
+    textarea{
+      background-color: #EDEDED;
+      font-family: "SimHei";
+      padding: 1.5em;
+      border: 0px;
+    }
+    .sub{
+      background-color: #EDEDED;
+      font-family: "SimHei";
+      font-size: 0.8em;
+      margin: auto;
+      width: 80.5%;
+      border: 0px;
+      padding: 1.5em 1em 1em;
+      margin-top: 1em;
+    }
+    /*contact*/
+    .contact{
+      width: 100%;
+      background-color: #1A1A1A;
+      padding-bottom: 3em;
+    }
+    .contact h3{
+      text-align: center;
+      color: #fff;
+      font-family: "SimHei";
+      padding-top: 3em;
+      line-height: 1em;
+    }
+    .contact span{
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-family: "SimHei";
+      margin-bottom: 2em;
+    }
+    .email{
+      padding: 1em 3em;
+      border: 0px;
+    }
+    .sub2{
+      padding: 1em 1.5em;
+      border: 0px;
+    }
+    .info2{
+      text-align: center;
+    }

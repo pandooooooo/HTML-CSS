@@ -1,0 +1,14 @@
+1. layout类中四个子项
+    可以不用绝对定位的方式实现 可以inline-block 给一个宽度 这样可以复用大部分样式
+
+2. cityInfo类中
+    select元素可以通过-webkit-appearance:none 去除默认样式并自定义下拉框样式
+
+3. layoutThree类中
+    直接对threeLeft类应有text-align: center 就可以将"查看按钮"居中 不需要设置margin属性
+
+4. layoutWord类
+    h3类不需要padding-top
+
+5. 最后的contact类
+    可以.contact{padding-top: 3em} 而不是对子元素h3添加padding-top属性
